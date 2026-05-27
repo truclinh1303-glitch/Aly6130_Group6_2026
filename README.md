@@ -20,4 +20,74 @@ Pre-mortem analysis: Assumed the acquisition failed two years after closing and 
 Process mapping: Considered how an order moves from the fulfillment center to customer delivery and where AI routing could create or reduce risk. 
 KRI brainstorming: Converted each risk theme into measurable warning indicators that management could monitor before, during, and after acquisition integration. 
 
+PRELIMINARY RISK FACTORS AND CONTROLS 
+ In preparation for the risk assessment and treatment phase, the table below provides a preliminary list of the contributing factors and controls for the risks underlying the proposed acquisition business plan. Technical risk and information security risk are explicitly included as core risk categories, not as supplementary IT concerns. 
+
+Underlying Risk 
+
+Contributing Factors 
+
+Preliminary Controls / Treatments 
+
+Strategic Acquisition Risk 
+
+High acquisition cost with uncertain ROI; potential overlap with Amazon's existing internal routing tools; heightened antitrust scrutiny given Amazon's prior deal challenges and existing regulatory investigation. 
+
+Conduct comprehensive pre-close due diligence covering technology, financial, legal, and antitrust dimensions; define measurable synergy targets with 6, 12, and 18-month milestone checkpoints; establish Board-level risk appetite statement for the acquisition; engage antitrust counsel at Letter of Intent stage. 
+
+Operational Disruption Risk 
+
+AI routing logic may conflict with physical dispatch realities, including parking constraints, building access requirements, package loading sequence, weather conditions, or local delivery restrictions that the model has not been trained to handle. 
+
+Pilot the AI optimization platform in three to five selected delivery regions before enterprise rollout; compare AI recommendations directly against experienced human dispatcher decisions during the pilot; require manual override capability at all delivery stations; maintain a documented rollback plan for each market. 
+
+People and Labor Risk 
+
+Driver resistance driven by perceived surveillance and algorithmic pressure; DSP owner concern about loss of dispatch autonomy; insufficient training and change communication; AI optimization targets that conflict with safe working conditions or legally required breaks. 
+
+Establish driver and DSP feedback loops with documented response commitments; embed safety-first routing constraints as non-negotiable model parameters; develop role-specific training modules for drivers, DSP managers, and delivery station staff; monitor driver safety incident and adoption KRIs monthly with escalation to VP-level if thresholds are breached. 
+
+Data Quality Risk 
+
+Incomplete or inaccurate address records, traffic feed calibration errors, inconsistent scan timestamps, duplicate customer delivery instructions, or missing exception codes reduce AI model accuracy and generate unreliable route recommendations. 
+
+Implement data governance standards and a data quality scorecard covering all primary inputs to the AI optimization engine; deploy master data management protocols for address and customer data; establish automated validation rules that flag input data below defined quality thresholds before it is consumed by the model. 
+
+Technical Integration Risk 
+
+API incompatibility between the acquired platform and Amazon's legacy TMS components; latency issues under peak delivery volume; model drift as demand patterns and traffic conditions evolve; scalability constraints during Prime Day and holiday peak seasons; dependency on third-party map, weather, and traffic data providers. 
+
+Conduct a full architecture review and API compatibility assessment as a pre-close condition; perform integration testing and load testing at simulated peak volume before any production deployment; implement continuous AI model performance monitoring with automated drift detection alerts; negotiate vendor SLAs for all third-party data dependencies; maintain a fallback routing engine at all delivery stations. 
+
+Technical Risk — AI Model and Algorithm Risk 
+
+The optimization algorithm may prioritize speed or cost efficiency while underweighting driver safety, weather hazards, parking limitations, accessibility requirements, or delivery constraints; the model may also exhibit performance degradation or algorithmic bias in underrepresented geographies or demographic delivery areas. 
+
+Establish an AI model governance process with mandatory human review before any model version is deployed to Amazon's production delivery network; conduct pre-deployment algorithmic bias audits covering delivery outcomes by geography, demographic zone, and carrier type; implement an AI explainability logging standard that records the key inputs driving each route recommendation for audit and review purposes. 
+
+Information Security Risk 
+
+Customer home addresses and personal data, real-time driver geolocation signals, proof-of-delivery photographs, proprietary route intelligence, and carrier performance data transmitted through APIs create a high-value attack surface for external threat actors and represent significant data breach liability under CCPA, state privacy laws, and other applicable regulations. 
+
+Deploy zero-trust network access controls across all AI platform integrations; enforce encryption of all data in transit and at rest using current cryptographic standards; apply least-privilege role-based access management for all personnel and systems accessing customer and operational data; implement an API security gateway with anomaly detection for unauthorized or abnormal traffic; maintain documented incident response playbooks specific to delivery data breach scenarios with defined escalation timelines. 
+
+Legal and Regulatory Risk 
+
+Antitrust scrutiny of Amazon's combined market power in e-commerce and logistics; consumer privacy law obligations under CCPA and state equivalents; AI algorithmic accountability requirements under the EU AI Act and U.S. Executive Order on AI; labor classification and safety regulations governing gig-economy delivery workers; local facility and vehicle operation rules varying by jurisdiction. 
+
+Complete legal review of all applicable regulatory requirements before transaction close; conduct a privacy impact assessment for all customer and operational data processed by the AI system; establish jurisdiction-specific compliance monitoring for antitrust, privacy, and labor regulations; prepare regulator-ready documentation covering AI decision transparency, data use practices, and worker safety protections. 
+
+Facilities and Asset Risk 
+
+Delivery stations may not be physically configured for AI-generated load sequencing or package sortation order; electric vehicle charging infrastructure capacity at delivery stations may not align with the route lengths or charging requirements produced by the optimized route plans. 
+
+Conduct a facility readiness assessment at all delivery stations before AI-optimized dispatch is activated; perform route and load sequencing compatibility tests using real station floor plans and vehicle configurations; develop an EV charging capacity planning model aligned with the AI platform's projected route length and stop density outputs; maintain contingency manual dispatch procedures at each station. 
+
+Reputational and Customer Risk 
+
+Missed deliveries, inaccurate estimated time of arrival communications, unsafe delivery practices driven by AI-generated time pressure, or public concerns about AI decision-making in a consumer-facing context could damage Amazon's brand and customer trust. 
+
+Establish transparent customer communication standards for AI-generated delivery windows, including proactive notification when exceptions occur; define service recovery protocols and escalation paths for AI-attributed delivery failures; create an AI governance committee and ethics review board with authority to pause or modify AI routing in response to safety or reputational concerns. 
+
+
  
