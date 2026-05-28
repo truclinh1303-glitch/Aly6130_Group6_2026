@@ -1,11 +1,13 @@
 # Aly6130_Group6_2026
 DESCRIPTION OF THE PROPOSED ACQUISITION 
+
 The proposed acquisition involves Amazon purchasing a technology company or service that specializes in AI-based last-mile route optimization. This service would use real-time and historical data, such as traffic patterns, customer delivery windows, package volume, driver availability, weather, distance, delivery density, and failed delivery history, to recommend more efficient routes. 
 The goal of the acquisition is to help Amazon improve its last-mile delivery performance by using predictive analytics and automation. The system could support dispatchers, drivers, delivery station managers, and logistics planners by providing better route sequencing, more accurate delivery time estimates, and earlier identification of delivery risks. 
 However, the acquisition also introduces significant enterprise risks. Amazon would need to integrate the acquired system with its existing logistics, customer notification, driver mobile app, warehouse, and transportation management systems. The acquired service would also handle sensitive data, including customer addresses, driver location information, delivery photos, package details, and routing patterns. Therefore, the acquisition must be reviewed from an Enterprise Risk Management perspective before implementation. 
 
 
 SWOT ANALYSIS MATRIX
+
 The matrix below follows the provided SWOT template and presents examples in each quadrant, focusing on Amazon as the acquiring company and the proposed AI-powered last-mile delivery optimization service as the acquisition under consideration. The Threats quadrant specifically differentiates Amazon's presence in a competitive environment, which it has not yet fully experienced at this technology layer.
 
 STRENGTHS
