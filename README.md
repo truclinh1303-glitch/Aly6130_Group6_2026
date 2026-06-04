@@ -40,13 +40,13 @@ Number of High-Severity Vulnerabilities and Unauthorized Access Events
 
 Threshold Levels  
 
-Level	             Trigger
+Level	       -      Trigger
 
-Green	               No critical vulnerabilities exceed SLA requirements
+Green	       -        No critical vulnerabilities exceed SLA requirements
 
-Amber	               Critical vulnerabilities remain unresolved for 7–15 days
+Amber	       -        Critical vulnerabilities remain unresolved for 7–15 days
 
-Red	                 Any critical vulnerability exceeds 15 days, or any confirmed unauthorized access event occurs
+Red	         -        Any critical vulnerability exceeds 15 days, or any confirmed unauthorized access event occurs
 
 Risk Statement 
 
