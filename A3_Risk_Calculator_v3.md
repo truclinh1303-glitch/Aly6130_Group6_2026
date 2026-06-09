@@ -60,95 +60,68 @@
 
 **60 Risks across 6 Categories**
 
-### Financial Risks
-
-| Risk # | The Risk of / That … | Likelihood (1–9) | Impact (1–9) | Risk Score | Response Plan | Owner |
-|---|---|---|---|---|---|---|
-| R1 | Maintenance and ongoing support costs of AI routing system | 9 | 1 | 9 | Acceptance — budget recurring maintenance in TCO model; annual ROI review | CFO/Engineering |
-| R2 | Technology obsolescence before ROI is recovered | 5 | 2 | 10 | Mitigation — negotiate vendor upgrade clauses; 24-month technology refresh roadmap | CTO |
-| R3 | Vendor lock-in with increased switching costs | 7 | 4 | 28 | Transfer — require open API standards and data portability in acquisition contract | Procurement/Legal |
-| R4 | Legal and litigation costs from AI-generated compliance failures | 9 | 6 | 54 | Mitigation — engage AI legal counsel pre-deployment; establish AI governance board with audit trail | General Counsel |
-| R5 | Cost savings through AI route efficiency *(positive opportunity)* | 9 | 8 | 72 | Exploit (Positive) — define monthly KPIs: cost-per-stop, fuel, failed delivery rate vs. baseline | COO/Finance |
-| R6 | Initial capital costs for human and physical infrastructure | 9 | 9 | 81 | Mitigation — phase deployment over 18 months; staged milestones with go/no-go gates | CFO/Operations |
-| R7 | Acquisition overpayment at inflated AI market multiples | 7 | 8 | 56 | Mitigation — independent fairness opinion pre-close; synergy milestones with clawback provisions | CFO/M&A |
-| R8 | ROI shortfall if enterprise platform commercialization fails | 7 | 6 | 42 | Mitigation — pre-launch competitive benchmarking; hire enterprise sales team before commercialization | VP Logistics Tech |
-| R9 | Currency and macroeconomic risk on integration budget | 3 | 4 | 12 | Transfer — hedge multi-currency contracts; 15% contingency reserve | CFO/Treasury |
-| R10 | Unplanned integration cost overruns from complexity | 7 | 6 | 42 | Mitigation — independent technical due diligence; 20% contingency budget; weekly PMO reporting | Program Mgmt |
-
-### Operational Risks
-
-| Risk # | The Risk of / That … | Likelihood (1–9) | Impact (1–9) | Risk Score | Response Plan | Owner |
-|---|---|---|---|---|---|---|
-| R11 | Change management failure — driver and DSP resistance to AI routing | 7 | 1 | 7 | Mitigation — structured change management program; role-specific training; feedback loops | HR/Change Lead |
-| R12 | Limited AI talent and data science capability | 5 | 2 | 10 | Mitigation — hire AI/data science talent pre-integration; retention packages | HR/Talent Acq. |
-| R13 | Third-party data dependency — traffic, weather, map APIs | 9 | 4 | 36 | Transfer — negotiate SLAs with uptime guarantees; maintain fallback routing for all providers | CTO/Procurement |
-| R14 | Integration issues with legacy TMS/WMS across 1,100+ facilities | 3 | 6 | 18 | Mitigation — full API compatibility testing; manual dispatch fallback at every delivery station | IT/Engineering |
-| R15 | Data accuracy failures — incomplete addresses and timestamps | 5 | 8 | 40 | Mitigation — data quality scorecard; automated validation gates at 95% completeness threshold | Data Governance |
-| R16 | System failure and downtime during peak operations | 7 | 9 | 63 | Mitigation — 99.5% uptime SLA; quarterly disaster recovery drills; manual dispatch documented | CTO/SRE |
-| R17 | Delivery station physical readiness incompatible with AI sequencing | 5 | 4 | 20 | Mitigation — facility readiness assessment before AI dispatch activation | VP Facilities |
-| R18 | Driver safety incidents from AI-optimized time pressure on routes | 7 | 6 | 42 | Mitigation — embed safety-first constraints as non-negotiable routing parameters; monthly KRI | VP Safety/HR |
-| R19 | EV charging infrastructure misalignment with AI route lengths | 5 | 4 | 20 | Mitigation — EV charging capacity model aligned with AI projected route length outputs | VP Fleet/Eng. |
-| R20 | Failed delivery re-attempt rate increase from inaccurate AI windows | 7 | 6 | 42 | Mitigation — monitor re-attempt rate KRI; trigger model review if >5pp above baseline | VP Last-Mile Ops |
-
-### Competitive Risks
-
-| Risk # | The Risk of / That … | Likelihood (1–9) | Impact (1–9) | Risk Score | Response Plan | Owner |
-|---|---|---|---|---|---|---|
-| R21 | Failure to win market share against UPS ORION and FedEx Surround | 7 | 6 | 42 | Mitigation — pre-launch benchmarking vs. ORION/Surround; define enterprise win-rate KRI | VP Logistics Tech |
-| R22 | Platform launches below competitors' feature baseline | 1 | 4 | 4 | Mitigation — UX testing during pilot; address feature gaps before enterprise rollout | Product/CTO |
-| R23 | Decision accuracy by rivals exceeds Amazon's platform | 3 | 6 | 18 | Mitigation — monitor competitor accuracy quarterly; benchmark vs. UPS ORION and FedEx Surround | Strategy |
-| R24 | Cost of lagging in AI adoption — competitors capture gains first | 9 | 8 | 72 | Mitigation — accelerate acquisition timeline; define go/no-go milestone by Q4 2026 | CEO/Strategy |
-| R25 | Global rivals setting AI-driven logistics industry standards | 3 | 9 | 27 | Mitigation — publish delivery benchmarks; participate in logistics AI standards bodies | CEO/Strategy |
-| R26 | Loss of advantage if AWS integration is delayed or underperforms | 5 | 6 | 30 | Mitigation — pre-close AWS architecture review; define migration timeline with contractual guarantees | CTO/AWS |
-| R27 | New entrant AI logistics startups disrupting before full integration | 5 | 8 | 40 | Mitigation/M&A — establish competitive intelligence function; monitor logistics AI startups quarterly | Strategy/M&A |
-| R28 | Antitrust scrutiny of acquisition blocking or delaying deal close | 5 | 6 | 30 | Mitigation — engage antitrust counsel at LOI; prepare proactive regulatory submission | General Counsel |
-| R29 | Sustainability leadership gap — rivals achieve ESG compliance first | 3 | 4 | 12 | Mitigation — align route optimization with EV deployment; publish quarterly sustainability data | Sustainability |
-
-### Reputational Risks
-
-| Risk # | The Risk of / That … | Likelihood (1–9) | Impact (1–9) | Risk Score | Response Plan | Owner |
-|---|---|---|---|---|---|---|
-| R30 | Delivery efficiency degradation damaging Prime customer experience | 9 | 1 | 9 | Mitigation — monitor on-time delivery KRI monthly; proactive customer notification for exceptions | CX Lead |
-| R31 | System failure during peak season causing public reputational harm | 7 | 2 | 14 | Mitigation — public incident communication protocol; SLA-defined escalation paths | Comms/CTO |
-| R32 | Minimal human judgment in routing — algorithmic blind spots | 5 | 4 | 20 | Mitigation — mandatory human override capability at all stations; audit edge cases | AI Ethics Board |
-| R33 | Data privacy breach damaging customer trust and Amazon brand | 3 | 8 | 24 | Mitigation — zero-trust architecture; encryption in transit and at rest; Privacy Impact Assessment | CISO/Privacy |
-| R34 | Ethical concerns — algorithmic bias and discrimination in outcomes | 5 | 9 | 45 | Mitigation — pre-deployment bias audit by geography and demographics; annual accountability report | AI Ethics/Legal |
-| R35 | Negative media coverage of AI-driven driver labor practices | 7 | 6 | 42 | Mitigation — transparent AI disclosure policy; driver data-use guidelines; union engagement | Comms/HR |
-| R36 | Customer backlash from inaccurate AI-generated delivery windows | 5 | 4 | 20 | Mitigation — set realistic AI-generated ETAs during pilot; improve accuracy KRI before full rollout | CX |
-| R37 | Reputational harm from high-profile acquisition failure | 3 | 8 | 24 | Mitigation — staged integration with public milestone communication; define success metrics publicly | CEO/Comms |
-
-### Technical Risks
-
-| Risk # | The Risk of / That … | Likelihood (1–9) | Impact (1–9) | Risk Score | Response Plan | Owner |
-|---|---|---|---|---|---|---|
-| R38 | Algorithm performance degradation and model error rate | 1 | 1 | 1 | Acceptance — monitor route error rate KRI; trigger model review if >2% require manual override | Data Science |
-| R39 | Adversarial attack tolerance — vulnerability to route manipulation | 9 | 2 | 18 | Mitigation — annual penetration testing; API security gateway with anomaly detection | CISO |
-| R40 | System scalability failure under peak load (Prime Day, holidays) | 7 | 4 | 28 | Mitigation — load test at 2× projected peak; AWS auto-scaling for route computation workloads | CTO/Engineering |
-| R41 | Training data quality — incomplete or biased historical data | 5 | 6 | 30 | Mitigation — data quality standards pre-training; require vendor disclosure of training data provenance | Data Science |
-| R42 | Algorithmic bias in route recommendations by geography | 5 | 8 | 40 | Mitigation — fairness monitoring; bias audit by geography and demographics every 6 months | AI Ethics Board |
-| R43 | Limited training data for underrepresented and rural delivery zones | 9 | 9 | 81 | Mitigation — augment with synthetic data; transfer learning for underrepresented rural zones | Data Science |
-| R44 | AI model drift — accuracy degrades as real-world conditions change | 7 | 8 | 56 | Mitigation — continuous drift detection alerts; re-training trigger at 2% accuracy drop | Data Science |
-| R45 | API reliability failure — mapping and traffic feeds going offline | 5 | 6 | 30 | Transfer — multi-vendor data source strategy; fallback static routing auto-activated | Engineering |
-| R46 | Cybersecurity breach — customer addresses and driver geolocation | 5 | 9 | 45 | Mitigation — zero-trust controls; encryption; API security gateway; 15-day SLA for critical vulns | CISO/Privacy |
-| R47 | Platform integration with Amazon driver app fails or degrades UX | 5 | 4 | 20 | Mitigation — driver app integration testing in pilot; A/B testing before full rollout | Product/Eng. |
-| R48 | Real-time re-optimization latency exceeding thresholds at scale | 3 | 6 | 18 | Mitigation — latency benchmarking; AWS edge computing to reduce re-optimization delay | Engineering/AWS |
-| R49 | Single AI platform vendor dependency — no redundancy | 7 | 6 | 42 | Transfer — require open APIs; build internal routing fallback; vendor diversification post-integration | CTO/Procurement |
-
-### Legal/Compliance Risks
-
-| Risk # | The Risk of / That … | Likelihood (1–9) | Impact (1–9) | Risk Score | Response Plan | Owner |
-|---|---|---|---|---|---|---|
-| R50 | Vendor compliance failures — target not meeting security standards | 5 | 1 | 5 | Transfer — require SOC 2 Type II and ISO 27001 certification pre-close; audit rights in contract | Procurement/Legal |
-| R51 | Conflict with EU AI Act transparency and explainability requirements | 9 | 4 | 36 | Mitigation — AI explainability logging for all route decisions; engage EU AI Act compliance counsel | General Counsel |
-| R52 | Bias and discrimination legal costs from route outcome disparities | 7 | 6 | 42 | Mitigation — pre-deployment fairness audits; legal response fund; document bias remediation actions | General Counsel |
-| R53 | Regulatory changes requiring costly AI system modifications | 1 | 8 | 8 | Mitigation — modular AI architecture enabling rapid compliance updates; global regulation monitoring | Compliance/CTO |
-| R54 | CCPA and state privacy law compliance failure for delivery data | 3 | 9 | 27 | Mitigation — CCPA/state privacy law assessment; least-privilege access; annual compliance audit | CISO/Privacy |
-| R55 | Labor law violations — AI routing violating driver break regulations | 5 | 8 | 40 | Mitigation — embed legally required break intervals as non-negotiable routing constraints | VP HR/Legal |
-| R56 | Antitrust enforcement blocking commercialization of acquired platform | 3 | 8 | 24 | Mitigation — antitrust filing strategy at LOI; proactive market definition documentation | General Counsel |
-| R57 | IP disputes with acquired company's pre-existing patent portfolio | 3 | 6 | 18 | Transfer — full IP due diligence pre-close; freedom-to-operate analysis on core routing patents | General Counsel/IP |
-| R58 | Environmental and emissions regulation non-compliance | 5 | 6 | 30 | Mitigation — map AI route outputs to Clean Miles compliance metrics; file for regulatory pre-approval | Sustainability/Legal |
-| R59 | Cross-border data transfer restrictions affecting international network | 3 | 6 | 18 | Mitigation — data residency analysis; implement data localization where legally required | Privacy Officer |
-| R60 | SEC disclosure obligations from material acquisition risk events | 3 | 8 | 24 | Mitigation — establish disclosure committee; define materiality thresholds for risk reporting | CFO/Gen. Counsel |
+| Risk # | The Risk of / That … | Category | Likelihood (1–9) | Impact (1–9) | Risk Score | Response Plan | Owner |
+|---|---|---|---|---|---|---|---|
+| R1 | Maintenance and ongoing support costs of AI routing system | Financial | 9 | 1 | 9 | Acceptance — budget recurring maintenance in TCO model; annual ROI review | CFO/Engineering |
+| R2 | Technology obsolescence before ROI is recovered | Financial | 5 | 2 | 10 | Mitigation — negotiate vendor upgrade clauses; 24-month technology refresh roadmap | CTO |
+| R3 | Vendor lock-in with increased switching costs | Financial | 7 | 4 | 28 | Transfer — require open API standards and data portability in acquisition contract | Procurement/Legal |
+| R4 | Legal and litigation costs from AI-generated compliance failures | Financial | 9 | 6 | 54 | Mitigation — engage AI legal counsel pre-deployment; establish AI governance board with audit trail | General Counsel |
+| R5 | Cost savings through AI route efficiency *(positive opportunity)* | Financial | 9 | 8 | 72 | Exploit (Positive) — define monthly KPIs: cost-per-stop, fuel, failed delivery rate vs. baseline | COO/Finance |
+| R6 | Initial capital costs for human and physical infrastructure | Financial | 9 | 9 | 81 | Mitigation — phase deployment over 18 months; staged milestones with go/no-go gates | CFO/Operations |
+| R7 | Acquisition overpayment at inflated AI market multiples | Financial | 7 | 8 | 56 | Mitigation — independent fairness opinion pre-close; synergy milestones with clawback provisions | CFO/M&A |
+| R8 | ROI shortfall if enterprise platform commercialization fails | Financial | 7 | 6 | 42 | Mitigation — pre-launch competitive benchmarking; hire enterprise sales team before commercialization | VP Logistics Tech |
+| R9 | Currency and macroeconomic risk on integration budget | Financial | 3 | 4 | 12 | Transfer — hedge multi-currency contracts; 15% contingency reserve | CFO/Treasury |
+| R10 | Unplanned integration cost overruns from complexity | Financial | 7 | 6 | 42 | Mitigation — independent technical due diligence; 20% contingency budget; weekly PMO reporting | Program Mgmt |
+| R11 | Change management failure — driver and DSP resistance to AI routing | Operational | 7 | 1 | 7 | Mitigation — structured change management program; role-specific training; feedback loops | HR/Change Lead |
+| R12 | Limited AI talent and data science capability | Operational | 5 | 2 | 10 | Mitigation — hire AI/data science talent pre-integration; retention packages | HR/Talent Acq. |
+| R13 | Third-party data dependency — traffic, weather, map APIs | Operational | 9 | 4 | 36 | Transfer — negotiate SLAs with uptime guarantees; maintain fallback routing for all providers | CTO/Procurement |
+| R14 | Integration issues with legacy TMS/WMS across 1,100+ facilities | Operational | 3 | 6 | 18 | Mitigation — full API compatibility testing; manual dispatch fallback at every delivery station | IT/Engineering |
+| R15 | Data accuracy failures — incomplete addresses and timestamps | Operational | 5 | 8 | 40 | Mitigation — data quality scorecard; automated validation gates at 95% completeness threshold | Data Governance |
+| R16 | System failure and downtime during peak operations | Operational | 7 | 9 | 63 | Mitigation — 99.5% uptime SLA; quarterly disaster recovery drills; manual dispatch documented | CTO/SRE |
+| R17 | Delivery station physical readiness incompatible with AI sequencing | Operational | 5 | 4 | 20 | Mitigation — facility readiness assessment before AI dispatch activation | VP Facilities |
+| R18 | Driver safety incidents from AI-optimized time pressure on routes | Operational | 7 | 6 | 42 | Mitigation — embed safety-first constraints as non-negotiable routing parameters; monthly KRI | VP Safety/HR |
+| R19 | EV charging infrastructure misalignment with AI route lengths | Operational | 5 | 4 | 20 | Mitigation — EV charging capacity model aligned with AI projected route length outputs | VP Fleet/Eng. |
+| R20 | Failed delivery re-attempt rate increase from inaccurate AI windows | Operational | 7 | 6 | 42 | Mitigation — monitor re-attempt rate KRI; trigger model review if >5pp above baseline | VP Last-Mile Ops |
+| R21 | Failure to win market share against UPS ORION and FedEx Surround | Competitive | 7 | 6 | 42 | Mitigation — pre-launch benchmarking vs. ORION/Surround; define enterprise win-rate KRI | VP Logistics Tech |
+| R22 | Platform launches below competitors' feature baseline | Competitive | 1 | 4 | 4 | Mitigation — UX testing during pilot; address feature gaps before enterprise rollout | Product/CTO |
+| R23 | Decision accuracy by rivals exceeds Amazon's platform | Competitive | 3 | 6 | 18 | Mitigation — monitor competitor accuracy quarterly; benchmark vs. UPS ORION and FedEx Surround | Strategy |
+| R24 | Cost of lagging in AI adoption — competitors capture gains first | Competitive | 9 | 8 | 72 | Mitigation — accelerate acquisition timeline; define go/no-go milestone by Q4 2026 | CEO/Strategy |
+| R25 | Global rivals setting AI-driven logistics industry standards | Competitive | 3 | 9 | 27 | Mitigation — publish delivery benchmarks; participate in logistics AI standards bodies | CEO/Strategy |
+| R26 | Loss of advantage if AWS integration is delayed or underperforms | Competitive | 5 | 6 | 30 | Mitigation — pre-close AWS architecture review; define migration timeline with contractual guarantees | CTO/AWS |
+| R27 | New entrant AI logistics startups disrupting before full integration | Competitive | 5 | 8 | 40 | Mitigation/M&A — establish competitive intelligence function; monitor logistics AI startups quarterly | Strategy/M&A |
+| R28 | Antitrust scrutiny of acquisition blocking or delaying deal close | Competitive | 5 | 6 | 30 | Mitigation — engage antitrust counsel at LOI; prepare proactive regulatory submission | General Counsel |
+| R29 | Sustainability leadership gap — rivals achieve ESG compliance first | Competitive | 3 | 4 | 12 | Mitigation — align route optimization with EV deployment; publish quarterly sustainability data | Sustainability |
+| R30 | Delivery efficiency degradation damaging Prime customer experience | Reputational | 9 | 1 | 9 | Mitigation — monitor on-time delivery KRI monthly; proactive customer notification for exceptions | CX Lead |
+| R31 | System failure during peak season causing public reputational harm | Reputational | 7 | 2 | 14 | Mitigation — public incident communication protocol; SLA-defined escalation paths | Comms/CTO |
+| R32 | Minimal human judgment in routing — algorithmic blind spots | Reputational | 5 | 4 | 20 | Mitigation — mandatory human override capability at all stations; audit edge cases | AI Ethics Board |
+| R33 | Data privacy breach damaging customer trust and Amazon brand | Reputational | 3 | 8 | 24 | Mitigation — zero-trust architecture; encryption in transit and at rest; Privacy Impact Assessment | CISO/Privacy |
+| R34 | Ethical concerns — algorithmic bias and discrimination in outcomes | Reputational | 5 | 9 | 45 | Mitigation — pre-deployment bias audit by geography and demographics; annual accountability report | AI Ethics/Legal |
+| R35 | Negative media coverage of AI-driven driver labor practices | Reputational | 7 | 6 | 42 | Mitigation — transparent AI disclosure policy; driver data-use guidelines; union engagement | Comms/HR |
+| R36 | Customer backlash from inaccurate AI-generated delivery windows | Reputational | 5 | 4 | 20 | Mitigation — set realistic AI-generated ETAs during pilot; improve accuracy KRI before full rollout | CX |
+| R37 | Reputational harm from high-profile acquisition failure | Reputational | 3 | 8 | 24 | Mitigation — staged integration with public milestone communication; define success metrics publicly | CEO/Comms |
+| R38 | Algorithm performance degradation and model error rate | Technical | 1 | 1 | 1 | Acceptance — monitor route error rate KRI; trigger model review if >2% require manual override | Data Science |
+| R39 | Adversarial attack tolerance — vulnerability to route manipulation | Technical | 9 | 2 | 18 | Mitigation — annual penetration testing; API security gateway with anomaly detection | CISO |
+| R40 | System scalability failure under peak load (Prime Day, holidays) | Technical | 7 | 4 | 28 | Mitigation — load test at 2× projected peak; AWS auto-scaling for route computation workloads | CTO/Engineering |
+| R41 | Training data quality — incomplete or biased historical data | Technical | 5 | 6 | 30 | Mitigation — data quality standards pre-training; require vendor disclosure of training data provenance | Data Science |
+| R42 | Algorithmic bias in route recommendations by geography | Technical | 5 | 8 | 40 | Mitigation — fairness monitoring; bias audit by geography and demographics every 6 months | AI Ethics Board |
+| R43 | Limited training data for underrepresented and rural delivery zones | Technical | 9 | 9 | 81 | Mitigation — augment with synthetic data; transfer learning for underrepresented rural zones | Data Science |
+| R44 | AI model drift — accuracy degrades as real-world conditions change | Technical | 7 | 8 | 56 | Mitigation — continuous drift detection alerts; re-training trigger at 2% accuracy drop | Data Science |
+| R45 | API reliability failure — mapping and traffic feeds going offline | Technical | 5 | 6 | 30 | Transfer — multi-vendor data source strategy; fallback static routing auto-activated | Engineering |
+| R46 | Cybersecurity breach — customer addresses and driver geolocation | Technical | 5 | 9 | 45 | Mitigation — zero-trust controls; encryption; API security gateway; 15-day SLA for critical vulns | CISO/Privacy |
+| R47 | Platform integration with Amazon driver app fails or degrades UX | Technical | 5 | 4 | 20 | Mitigation — driver app integration testing in pilot; A/B testing before full rollout | Product/Eng. |
+| R48 | Real-time re-optimization latency exceeding thresholds at scale | Technical | 3 | 6 | 18 | Mitigation — latency benchmarking; AWS edge computing to reduce re-optimization delay | Engineering/AWS |
+| R49 | Single AI platform vendor dependency — no redundancy | Technical | 7 | 6 | 42 | Transfer — require open APIs; build internal routing fallback; vendor diversification post-integration | CTO/Procurement |
+| R50 | Vendor compliance failures — target not meeting security standards | Legal/Compliance | 5 | 1 | 5 | Transfer — require SOC 2 Type II and ISO 27001 certification pre-close; audit rights in contract | Procurement/Legal |
+| R51 | Conflict with EU AI Act transparency and explainability requirements | Legal/Compliance | 9 | 4 | 36 | Mitigation — AI explainability logging for all route decisions; engage EU AI Act compliance counsel | General Counsel |
+| R52 | Bias and discrimination legal costs from route outcome disparities | Legal/Compliance | 7 | 6 | 42 | Mitigation — pre-deployment fairness audits; legal response fund; document bias remediation actions | General Counsel |
+| R53 | Regulatory changes requiring costly AI system modifications | Legal/Compliance | 1 | 8 | 8 | Mitigation — modular AI architecture enabling rapid compliance updates; global regulation monitoring | Compliance/CTO |
+| R54 | CCPA and state privacy law compliance failure for delivery data | Legal/Compliance | 3 | 9 | 27 | Mitigation — CCPA/state privacy law assessment; least-privilege access; annual compliance audit | CISO/Privacy |
+| R55 | Labor law violations — AI routing violating driver break regulations | Legal/Compliance | 5 | 8 | 40 | Mitigation — embed legally required break intervals as non-negotiable routing constraints | VP HR/Legal |
+| R56 | Antitrust enforcement blocking commercialization of acquired platform | Legal/Compliance | 3 | 8 | 24 | Mitigation — antitrust filing strategy at LOI; proactive market definition documentation | General Counsel |
+| R57 | IP disputes with acquired company's pre-existing patent portfolio | Legal/Compliance | 3 | 6 | 18 | Transfer — full IP due diligence pre-close; freedom-to-operate analysis on core routing patents | General Counsel/IP |
+| R58 | Environmental and emissions regulation non-compliance | Legal/Compliance | 5 | 6 | 30 | Mitigation — map AI route outputs to Clean Miles compliance metrics; file for regulatory pre-approval | Sustainability/Legal |
+| R59 | Cross-border data transfer restrictions affecting international network | Legal/Compliance | 3 | 6 | 18 | Mitigation — data residency analysis; implement data localization where legally required | Privacy Officer |
+| R60 | SEC disclosure obligations from material acquisition risk events | Legal/Compliance | 3 | 8 | 24 | Mitigation — establish disclosure committee; define materiality thresholds for risk reporting | CFO/Gen. Counsel |
 
 ### Risk Summary by Category
 
@@ -221,71 +194,71 @@
 | 3 | Transfer | Shift risk to a third party (insurance, contract, outsourcing) |
 | 4 | Acceptance | Acknowledge and monitor residual risk |
 
-### Risk Index — Full List Sorted by Likelihood Score (Ascending)
+### Risk Index — Full List (R1–R60)
 
 | Risk # | The Risk of / That … | Category | Likelihood (P) | Impact (I) | Risk Score |
 |---|---|---|---|---|---|
-| R38 | Algorithm performance degradation and model error rate | Technical | 1 | 1 | 1 |
-| R22 | Platform launches below competitors' feature baseline | Competitive | 1 | 4 | 4 |
-| R53 | Regulatory changes requiring costly AI system modifications | Legal/Compliance | 1 | 8 | 8 |
-| R9 | Currency and macroeconomic risk on integration budget | Financial | 3 | 4 | 12 |
-| R29 | Sustainability leadership gap — rivals achieve ESG compliance first | Competitive | 3 | 4 | 12 |
-| R14 | Integration issues with legacy TMS/WMS across 1,100+ facilities | Operational | 3 | 6 | 18 |
-| R23 | Decision accuracy by rivals exceeds Amazon's platform | Competitive | 3 | 6 | 18 |
-| R48 | Real-time re-optimization latency exceeding thresholds at scale | Technical | 3 | 6 | 18 |
-| R57 | IP disputes with acquired company's pre-existing patent portfolio | Legal/Compliance | 3 | 6 | 18 |
-| R59 | Cross-border data transfer restrictions affecting international network | Legal/Compliance | 3 | 6 | 18 |
-| R33 | Data privacy breach damaging customer trust and Amazon brand | Reputational | 3 | 8 | 24 |
-| R37 | Reputational harm from high-profile acquisition failure | Reputational | 3 | 8 | 24 |
-| R56 | Antitrust enforcement blocking commercialization of acquired platform | Legal/Compliance | 3 | 8 | 24 |
-| R60 | SEC disclosure obligations from material acquisition risk events | Legal/Compliance | 3 | 8 | 24 |
-| R25 | Global rivals setting AI-driven logistics industry standards | Competitive | 3 | 9 | 27 |
-| R54 | CCPA and state privacy law compliance failure for delivery data | Legal/Compliance | 3 | 9 | 27 |
-| R50 | Vendor compliance failures — target not meeting security standards | Legal/Compliance | 5 | 1 | 5 |
-| R2 | Technology obsolescence before ROI is recovered | Financial | 5 | 2 | 10 |
-| R12 | Limited AI talent and data science capability | Operational | 5 | 2 | 10 |
-| R17 | Delivery station physical readiness incompatible with AI sequencing | Operational | 5 | 4 | 20 |
-| R19 | EV charging infrastructure misalignment with AI route lengths | Operational | 5 | 4 | 20 |
-| R32 | Minimal human judgment in routing — algorithmic blind spots | Reputational | 5 | 4 | 20 |
-| R36 | Customer backlash from inaccurate AI-generated delivery windows | Reputational | 5 | 4 | 20 |
-| R47 | Platform integration with Amazon driver app fails or degrades UX | Technical | 5 | 4 | 20 |
-| R26 | Loss of advantage if AWS integration is delayed or underperforms | Competitive | 5 | 6 | 30 |
-| R28 | Antitrust scrutiny of acquisition blocking or delaying deal close | Competitive | 5 | 6 | 30 |
-| R41 | Training data quality — incomplete or biased historical data | Technical | 5 | 6 | 30 |
-| R45 | API reliability failure — mapping and traffic feeds going offline | Technical | 5 | 6 | 30 |
-| R58 | Environmental and emissions regulation non-compliance | Legal/Compliance | 5 | 6 | 30 |
-| R15 | Data accuracy failures — incomplete addresses and timestamps | Operational | 5 | 8 | 40 |
-| R27 | New entrant AI logistics startups disrupting before full integration | Competitive | 5 | 8 | 40 |
-| R42 | Algorithmic bias in route recommendations by geography | Technical | 5 | 8 | 40 |
-| R55 | Labor law violations — AI routing violating driver break regulations | Legal/Compliance | 5 | 8 | 40 |
-| R34 | Ethical concerns — algorithmic bias and discrimination in outcomes | Reputational | 5 | 9 | 45 |
-| R46 | Cybersecurity breach — customer addresses and driver geolocation | Technical | 5 | 9 | 45 |
-| R11 | Change management failure — driver and DSP resistance to AI routing | Operational | 7 | 1 | 7 |
-| R31 | System failure during peak season causing public reputational harm | Reputational | 7 | 2 | 14 |
-| R3 | Vendor lock-in with increased switching costs | Financial | 7 | 4 | 28 |
-| R40 | System scalability failure under peak load (Prime Day, holidays) | Technical | 7 | 4 | 28 |
-| R8 | ROI shortfall if enterprise platform commercialization fails | Financial | 7 | 6 | 42 |
-| R10 | Unplanned integration cost overruns from complexity | Financial | 7 | 6 | 42 |
-| R18 | Driver safety incidents from AI-optimized time pressure on routes | Operational | 7 | 6 | 42 |
-| R20 | Failed delivery re-attempt rate increase from inaccurate AI windows | Operational | 7 | 6 | 42 |
-| R21 | Failure to win market share against UPS ORION and FedEx Surround | Competitive | 7 | 6 | 42 |
-| R35 | Negative media coverage of AI-driven driver labor practices | Reputational | 7 | 6 | 42 |
-| R49 | Single AI platform vendor dependency — no redundancy | Technical | 7 | 6 | 42 |
-| R52 | Bias and discrimination legal costs from route outcome disparities | Legal/Compliance | 7 | 6 | 42 |
-| R7 | Acquisition overpayment at inflated AI market multiples | Financial | 7 | 8 | 56 |
-| R44 | AI model drift — accuracy degrades as real-world conditions change | Technical | 7 | 8 | 56 |
-| R16 | System failure and downtime during peak operations | Operational | 7 | 9 | 63 |
 | R1 | Maintenance and ongoing support costs of AI routing system | Financial | 9 | 1 | 9 |
-| R30 | Delivery efficiency degradation damaging Prime customer experience | Reputational | 9 | 1 | 9 |
-| R39 | Adversarial attack tolerance — vulnerability to route manipulation | Technical | 9 | 2 | 18 |
-| R13 | Third-party data dependency — traffic, weather, map APIs | Operational | 9 | 4 | 36 |
-| R51 | Conflict with EU AI Act transparency and explainability requirements | Legal/Compliance | 9 | 4 | 36 |
+| R2 | Technology obsolescence before ROI is recovered | Financial | 5 | 2 | 10 |
+| R3 | Vendor lock-in with increased switching costs | Financial | 7 | 4 | 28 |
 | R4 | Legal and litigation costs from AI-generated compliance failures | Financial | 9 | 6 | 54 |
 | R5 | Cost savings through AI route efficiency *(positive opportunity)* | Financial | 9 | 8 | 72 |
-| R24 | Cost of lagging in AI adoption — competitors capture gains first | Competitive | 9 | 8 | 72 |
 | R6 | Initial capital costs for human and physical infrastructure | Financial | 9 | 9 | 81 |
+| R7 | Acquisition overpayment at inflated AI market multiples | Financial | 7 | 8 | 56 |
+| R8 | ROI shortfall if enterprise platform commercialization fails | Financial | 7 | 6 | 42 |
+| R9 | Currency and macroeconomic risk on integration budget | Financial | 3 | 4 | 12 |
+| R10 | Unplanned integration cost overruns from complexity | Financial | 7 | 6 | 42 |
+| R11 | Change management failure — driver and DSP resistance to AI routing | Operational | 7 | 1 | 7 |
+| R12 | Limited AI talent and data science capability | Operational | 5 | 2 | 10 |
+| R13 | Third-party data dependency — traffic, weather, map APIs | Operational | 9 | 4 | 36 |
+| R14 | Integration issues with legacy TMS/WMS across 1,100+ facilities | Operational | 3 | 6 | 18 |
+| R15 | Data accuracy failures — incomplete addresses and timestamps | Operational | 5 | 8 | 40 |
+| R16 | System failure and downtime during peak operations | Operational | 7 | 9 | 63 |
+| R17 | Delivery station physical readiness incompatible with AI sequencing | Operational | 5 | 4 | 20 |
+| R18 | Driver safety incidents from AI-optimized time pressure on routes | Operational | 7 | 6 | 42 |
+| R19 | EV charging infrastructure misalignment with AI route lengths | Operational | 5 | 4 | 20 |
+| R20 | Failed delivery re-attempt rate increase from inaccurate AI windows | Operational | 7 | 6 | 42 |
+| R21 | Failure to win market share against UPS ORION and FedEx Surround | Competitive | 7 | 6 | 42 |
+| R22 | Platform launches below competitors' feature baseline | Competitive | 1 | 4 | 4 |
+| R23 | Decision accuracy by rivals exceeds Amazon's platform | Competitive | 3 | 6 | 18 |
+| R24 | Cost of lagging in AI adoption — competitors capture gains first | Competitive | 9 | 8 | 72 |
+| R25 | Global rivals setting AI-driven logistics industry standards | Competitive | 3 | 9 | 27 |
+| R26 | Loss of advantage if AWS integration is delayed or underperforms | Competitive | 5 | 6 | 30 |
+| R27 | New entrant AI logistics startups disrupting before full integration | Competitive | 5 | 8 | 40 |
+| R28 | Antitrust scrutiny of acquisition blocking or delaying deal close | Competitive | 5 | 6 | 30 |
+| R29 | Sustainability leadership gap — rivals achieve ESG compliance first | Competitive | 3 | 4 | 12 |
+| R30 | Delivery efficiency degradation damaging Prime customer experience | Reputational | 9 | 1 | 9 |
+| R31 | System failure during peak season causing public reputational harm | Reputational | 7 | 2 | 14 |
+| R32 | Minimal human judgment in routing — algorithmic blind spots | Reputational | 5 | 4 | 20 |
+| R33 | Data privacy breach damaging customer trust and Amazon brand | Reputational | 3 | 8 | 24 |
+| R34 | Ethical concerns — algorithmic bias and discrimination in outcomes | Reputational | 5 | 9 | 45 |
+| R35 | Negative media coverage of AI-driven driver labor practices | Reputational | 7 | 6 | 42 |
+| R36 | Customer backlash from inaccurate AI-generated delivery windows | Reputational | 5 | 4 | 20 |
+| R37 | Reputational harm from high-profile acquisition failure | Reputational | 3 | 8 | 24 |
+| R38 | Algorithm performance degradation and model error rate | Technical | 1 | 1 | 1 |
+| R39 | Adversarial attack tolerance — vulnerability to route manipulation | Technical | 9 | 2 | 18 |
+| R40 | System scalability failure under peak load (Prime Day, holidays) | Technical | 7 | 4 | 28 |
+| R41 | Training data quality — incomplete or biased historical data | Technical | 5 | 6 | 30 |
+| R42 | Algorithmic bias in route recommendations by geography | Technical | 5 | 8 | 40 |
 | R43 | Limited training data for underrepresented and rural delivery zones | Technical | 9 | 9 | 81 |
+| R44 | AI model drift — accuracy degrades as real-world conditions change | Technical | 7 | 8 | 56 |
+| R45 | API reliability failure — mapping and traffic feeds going offline | Technical | 5 | 6 | 30 |
+| R46 | Cybersecurity breach — customer addresses and driver geolocation | Technical | 5 | 9 | 45 |
+| R47 | Platform integration with Amazon driver app fails or degrades UX | Technical | 5 | 4 | 20 |
+| R48 | Real-time re-optimization latency exceeding thresholds at scale | Technical | 3 | 6 | 18 |
+| R49 | Single AI platform vendor dependency — no redundancy | Technical | 7 | 6 | 42 |
+| R50 | Vendor compliance failures — target not meeting security standards | Legal/Compliance | 5 | 1 | 5 |
+| R51 | Conflict with EU AI Act transparency and explainability requirements | Legal/Compliance | 9 | 4 | 36 |
+| R52 | Bias and discrimination legal costs from route outcome disparities | Legal/Compliance | 7 | 6 | 42 |
+| R53 | Regulatory changes requiring costly AI system modifications | Legal/Compliance | 1 | 8 | 8 |
+| R54 | CCPA and state privacy law compliance failure for delivery data | Legal/Compliance | 3 | 9 | 27 |
+| R55 | Labor law violations — AI routing violating driver break regulations | Legal/Compliance | 5 | 8 | 40 |
+| R56 | Antitrust enforcement blocking commercialization of acquired platform | Legal/Compliance | 3 | 8 | 24 |
+| R57 | IP disputes with acquired company's pre-existing patent portfolio | Legal/Compliance | 3 | 6 | 18 |
+| R58 | Environmental and emissions regulation non-compliance | Legal/Compliance | 5 | 6 | 30 |
+| R59 | Cross-border data transfer restrictions affecting international network | Legal/Compliance | 3 | 6 | 18 |
+| R60 | SEC disclosure obligations from material acquisition risk events | Legal/Compliance | 3 | 8 | 24 |
 
 ---
 
-*ALY 6130 — Group 6 (Linh Hoang, Sandra Amponsah, Victoria Kpetigo) | June 2026*
+*ALY 6130 — Group 6 (Truc Linh, Sandra Amponsah, Victoria Kpetigo) | June 2026*
