@@ -1,16 +1,5 @@
-# SWOT Analysis: Enterprise Risk Management (ERM)
 
-**Course:** ALY 6130 – Risk Management | Week 1 – Module 1
-
-**Topic:** Amazon's Proposed Acquisition of an AI-Powered Last-Mile Delivery Optimization Service
-
-**Group 6:** Sandra Amponsah · Linh Hoang · Victoria Kpetigo
-
-**Date:** May 26, 2026
-
----
-
-## Company Overview *(Sandra)*
+## Company Overview
 
 Amazon.com, Inc. is one of the world's largest e-commerce, cloud computing, and logistics companies. The company operates across multiple business areas, including online retail, Amazon Web Services, digital advertising, subscription services, fulfillment, and transportation. At peak periods, Amazon fulfills approximately 8 million packages per day. A major part of Amazon's competitive advantage is its ability to deliver products quickly and reliably to customers.
 
@@ -20,7 +9,7 @@ Despite this scale, last-mile delivery remains Amazon's single largest operation
 
 ---
 
-## Problem Statement *(Linh)*
+## Problem Statement
 
 Amazon's last-mile delivery network faces increasing pressure to deliver faster, more cheaply, more safely, and more sustainably while maintaining customer trust. Last-mile delivery is one of the most complex parts of logistics because it must balance customer promises, urban congestion, failed delivery attempts, driver safety, labor capacity, and high volumes of time-sensitive orders.
 
@@ -28,7 +17,7 @@ The business problem is that Amazon's current last-mile operations are exposed t
 
 ---
 
-## Description of the Proposed Acquisition *(Victoria)*
+## Description of the Proposed Acquisition
 
 The proposed acquisition involves Amazon purchasing a technology company or service that specializes in AI-based last-mile route optimization. This service would use real-time and historical data — such as traffic patterns, customer delivery windows, package volume, driver availability, weather, distance, delivery density, and failed delivery history — to recommend more efficient routes.
 
@@ -38,7 +27,7 @@ However, the acquisition also introduces significant enterprise risks. Amazon wo
 
 ---
 
-## ERM Risk Under Consideration *(Sandra)*
+## ERM Risk Under Consideration
 
 The primary ERM risk is **strategic and operational integration risk**: Amazon could acquire an AI last-mile optimization service but fail to integrate it safely, securely, and effectively into its fulfillment, driver, Delivery Service Partner (DSP), customer communication, and data governance systems. Secondary risks span:
 
@@ -52,7 +41,7 @@ If unmanaged, these risks could collectively lead to poor delivery decisions, cy
 
 ---
 
-## Brainstorming Techniques Used to Identify Risks *(Sandra)*
+## Brainstorming Techniques Used to Identify Risks
 
 The following brainstorming techniques were used to identify the risk themes behind the SWOT analysis:
 
@@ -64,7 +53,7 @@ The following brainstorming techniques were used to identify the risk themes beh
 
 ---
 
-## Key Risk Indicators (KRIs) *(Linh)*
+## Key Risk Indicators (KRIs)
 
 The table below presents Key Risk Indicators developed across the business's people, processes, technology, facilities, and other critical operational dimensions, reflecting both standard operational risks and the technical and information security risks specific to an AI-powered delivery optimization acquisition.
 
@@ -86,7 +75,7 @@ The table below presents Key Risk Indicators developed across the business's peo
 
 ---
 
-## SWOT Analysis Matrix *(Victoria)*
+## SWOT Analysis Matrix 
 
 The matrix below follows the provided SWOT template, focusing on Amazon as the acquiring company and the proposed AI-powered last-mile delivery optimization service as the acquisition under consideration. The Threats quadrant specifically differentiates Amazon's presence in a competitive environment it has not yet fully experienced at this technology layer.
 
@@ -142,7 +131,7 @@ If AI routing optimization increases pressure on drivers to complete more stops 
 
 ---
 
-## Preliminary Risk Factors and Controls *(Sandra)*
+## Preliminary Risk Factors and Controls 
 
 In preparation for the risk assessment and treatment phase, the table below provides a preliminary list of the contributing factors and controls for the risks underlying the proposed acquisition business plan. Technical risk and information security risk are explicitly included as core risk categories.
 
@@ -161,7 +150,7 @@ In preparation for the risk assessment and treatment phase, the table below prov
 
 ---
 
-## Technical Risk and Information Security Considerations *(Linh)*
+## Technical Risk and Information Security Considerations 
 
 Because the proposed target is an AI-enabled operational system that will directly influence delivery promises, driver instructions, customer notifications, and routing decisions at scale, technical and information-security risks must be treated as core ERM concerns — not as standalone IT issues. Unlike conventional software acquisitions, a failure in this system would simultaneously generate operational disruption, financial loss, regulatory liability, and reputational damage.
 
@@ -179,7 +168,7 @@ The following risk categories each carry cross-domain ERM consequences and must 
 
 ---
 
-## Recommended ERM Treatment Approach *(Victoria)*
+## Recommended ERM Treatment Approach 
 
 - **Before closing** — Complete technical, cyber, legal, antitrust, privacy, data-quality, and cultural due diligence on the target service.
 - **During integration** — Run controlled pilots in selected delivery regions and compare AI route performance against current baseline KPIs.
