@@ -1,0 +1,227 @@
+# DATA SOURCES REFERENCE
+*Amazon AI Last-Mile Delivery Acquisition*
+
+**ALY 6130 — Enterprise Risk Management | Group 6
+
+> This document consolidates all data sources from all team members: Victoria, Sandra, and Linh.
+---
+
+## PART 1 — STRUCTURED DATA SOURCES
+
+### 1.1 Last-Mile Delivery & Competitor Entry Data
+
+| Source / Dataset | Description | Direct Link | Category |
+|---|---|---|---|
+| **Amazon Delivery Dataset** | Last-mile logistics & delivery performance: routes, outcomes, operational KPIs. | [Kaggle — sujalsuthar](https://www.kaggle.com/datasets/sujalsuthar/amazon-delivery-dataset) | Structured · Delivery |
+| **Amazon Last-Mile Routing Challenge (MIT + Amazon)** | 9,184 real Amazon driver routes across 5 US cities (2018). Route, stop, and package-level features. Official research dataset. | [AWS Open Data](https://registry.opendata.aws/amazon-last-mile-challenges) | Structured · Delivery |
+| **Last Mile Delivery Times** | Real-world delivery time records for last-mile operations. | [Kaggle — pingpang](https://www.kaggle.com/datasets/pingpang/lastmiledeliverytimes) | Structured · Delivery |
+| **Last Mile Delivery (Meissydanjiah)** | Delivery operations data including route and timing. | [Kaggle — meissydanjiah](https://www.kaggle.com/datasets/meissydanjiah/last-mile-delivery) | Structured · Delivery |
+| **UPS Facilities Locations** | UPS facility network across the US — competitor facility analysis. | [Kaggle — thedevastator](https://www.kaggle.com/datasets/thedevastator/ups-facilities-locations) | Structured · Delivery |
+| **Transportation & Logistics Tracking (2024)** | Shipment tracking, delivery performance, logistics KPIs. | [Kaggle — nicolemachado](https://www.kaggle.com/datasets/nicolemachado/transportation-and-logistics-tracking-dataset) | Structured · Delivery |
+| **US Logistics Performance Dataset** | 2,000 US shipment records: delays, costs, carriers, seasonal patterns. ML-ready. | [Kaggle — shahriarkabir](https://www.kaggle.com/datasets/shahriarkabir/us-logistics-performance-dataset) | Structured · Delivery |
+| **Delivery Logistics Performance & Operations** | Delivery KPIs and operations performance metrics. | [Kaggle — ayeshaseherr](https://www.kaggle.com/datasets/ayeshaseherr/delivery-logistics-dataset) | Structured · Delivery |
+| **Logistics & Supply Chain Dataset** | Broad logistics and supply chain operations dataset (Oct 2024). | [Kaggle — datasetengineer](https://www.kaggle.com/datasets/datasetengineer/logistics-and-supply-chain-dataset) | Structured · Delivery |
+| **LaDe: Industry Last-Mile Delivery Dataset** | 10.6M packages from 21k real couriers over 6 months, multiple cities. Research-grade. | [arXiv 2306.10675](https://arxiv.org/abs/2306.10675) | Structured · Delivery |
+
+---
+
+### 1.2 Supply Chain Risk & Operational Data
+
+| Source / Dataset | Description | Direct Link | Category |
+|---|---|---|---|
+| **Global Supply Chain Risk & Logistics 2024–2026** | Risk indicators, disruptions, and logistics performance 2024–2026. Most recent dataset. | [Kaggle — nudratabbas](https://www.kaggle.com/datasets/nudratabbas/global-supply-chain-risk-and-logistics-2024-2026) | Structured · Supply Chain |
+| **Supply Chain Operations & Risk Analysis** | Risk analysis across supply chain operations with detailed operational metrics. | [Kaggle — zoya77](https://www.kaggle.com/datasets/zoya77/supply-chain-operations-and-risk-analysis-dataset) | Structured · Supply Chain |
+| **US Supply Chain Risk Analysis** | US-focused risk metrics for supply chain operations. | [Kaggle — yuanchunhong](https://www.kaggle.com/datasets/yuanchunhong/us-supply-chain-risk-analysis-dataset) | Structured · Supply Chain |
+| **Supply Chain Risk Data — SMEs** | IoT, ERP, supplier and market risk indicators (July 2025). | [Kaggle — programmer3](https://www.kaggle.com/datasets/programmer3/supply-chain-risk-data-for-smes) | Structured · Supply Chain |
+| **DataCo Smart Supply Chain (Big Data)** | 180,000+ records: provisioning, production, sales, commercial distribution. Structured + clickstream. | [Kaggle — shashwatwork](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis) | Structured · Supply Chain |
+| **Flexport Supply Chain Index** | Container shipping delays, port congestion, supplier lead time data. | [flexport.com](https://www.flexport.com/research/ocean-timeliness) | Structured · Supply Chain |
+| **Shipping & Logistics Datasets (GitHub)** | Curated repository of 20+ public datasets on shipping, delivery, and route optimization. | [GitHub — austinlasseter](https://github.com/austinlasseter/datasets-shipping-logistics) | Structured · Supply Chain |
+| **Pitney Bowes Parcel Shipping Index** | US/global parcel volumes by carrier, YoY growth rates, market share shifts. | [pitneybowes.com](https://www.pitneybowes.com/us/shipping-index) | Structured · Supply Chain |
+
+---
+
+### 1.3 Amazon Financials & SEC Filings
+
+| Source / Dataset | Description | Direct Link | Category |
+|---|---|---|---|
+| **Amazon 10-K / Annual Report (SEC EDGAR)** | Revenue, capex, shipping & fulfillment costs, operating margins, acquisition history. 8M daily packages, $14–17/pkg delivery cost. | [ir.aboutamazon.com](https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters) | Structured · Financial |
+| **Amazon M&A History (Wikipedia)** | 100+ acquisitions: company, country, year, deal value from 1998 onward. | [Wikipedia](https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Amazon) | Structured · M&A |
+| **Amazon SEC 8-K Filings** | All material event disclosures: market entries, JVs, acquisitions filed with SEC. | [SEC EDGAR — AMZN](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AMZN&type=8-K) | Structured · Regulatory |
+| **Amazon Financial Statements 2009–2025 (Macrotrends)** | Revenue, COGS, gross margin, net income — 16 years, exportable CSV. | [macrotrends.net](https://www.macrotrends.net/stocks/charts/AMZN/amazon/financial-statements) | Structured · Financial |
+| **SEC EDGAR — Full-Text Search** | 10-K, 10-Q, 8-K filings for Amazon, UPS, FedEx; earnings disclosures, litigation costs. | [efts.sec.gov](https://efts.sec.gov/LATEST/search-index) | Structured · Regulatory |
+
+---
+
+### 1.4 Competitor Intelligence (UPS / FedEx / Walmart)
+
+| Source / Dataset | Description | Direct Link | Category |
+|---|---|---|---|
+| **UPS Annual Report / 10-K** | Package volume, ORION savings ($300–400M/yr), fuel reduction, route efficiency metrics. | [investors.ups.com](https://investors.ups.com/financial-information) | Structured · Competitor |
+| **FedEx Annual Report / 10-K** | Surround AI performance, last-mile cost structure, delivery speed benchmarks. | [investors.fedex.com](https://investors.fedex.com/financial-information) | Structured · Competitor |
+| **UPS ORION Performance Benchmarks** | 100M miles saved/yr, $400M cost reduction, 10–20% route efficiency gain, 25% OTD improvement. | [UPS Investor Relations](https://investors.ups.com/financial-information) | Structured · Competitor |
+| **Walmart SEC 8-K Filings** | Entry into India (Flipkart), Mexico, Africa — all market entry events. | [SEC EDGAR — WMT](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=WMT&type=8-K) | Structured · Competitor |
+| **eMarketer — E-commerce Market Share** | Amazon vs Walmart vs others: e-commerce share, Prime penetration, growth forecasts. | [emarketer.com](https://www.emarketer.com/topics/category/amazon) | Structured · Competitor **[Paid]** |
+
+---
+
+### 1.5 AI Market & M&A Data
+
+| Source / Dataset | Description | Direct Link | Category |
+|---|---|---|---|
+| **Stanford AI Index 2025** | Global AI investment $252.3B (2024), private investment +44.5% YoY, M&A +12.1%. | [aiindex.stanford.edu](https://aiindex.stanford.edu/report/) | Structured · AI Market |
+| **CB Insights — AI M&A Deals** | AI deal count, deal values, funding round history, logistics AI startup landscape. | [cbinsights.com](https://www.cbinsights.com/research/ai-ma-trends) | Structured · AI Market **[Freemium]** |
+| **Crunchbase — Logistics AI Startups** | Funding rounds, investors, valuations, founding dates for logistics AI companies. | [crunchbase.com](https://www.crunchbase.com/search/organizations) | Structured · AI Market **[Freemium]** |
+| **Finro AI Valuation Multiples Q1 2026** | EV/Revenue multiples for 575 AI companies across 15 niches; M&A comps dataset. (10x–50x revenue range) | [finrofca.com](https://www.finrofca.com/research/ai-multiples) | Structured · AI Market **[Paid]** |
+| **Unicorn Companies Dataset** | 1,000+ $1B+ firms: country, industry, founding year, investors — entry proxy. | [Kaggle — deepcontractor](https://www.kaggle.com/datasets/deepcontractor/unicorn-companies) | Structured · AI Market |
+
+---
+
+### 1.6 Macroeconomic & Labour Indicators
+
+| Source / Dataset | Description | Direct Link | Category |
+|---|---|---|---|
+| **FRED — Federal Reserve Economic Data** | 845,000+ economic time series: GDP, interest rates, CPI, inflation, exchange rates. Download CSV, no login. | [fred.stlouisfed.org](https://fred.stlouisfed.org) | Macro · Free |
+| **FRED — World GDP Series** | Annual global GDP in current USD from World Bank. | [FRED NYGDPMKTPCDWLD](https://fred.stlouisfed.org/series/NYGDPMKTPCDWLD) | Macro · Free |
+| **World Bank Open Data** | Free and open access to 200+ countries. GDP, inflation, interest rates, trade. | [data.worldbank.org](https://data.worldbank.org/indicator) | Macro · Free |
+| **World Bank LPI 2.0 (2023–2024)** | Logistics Performance Index: shipment speed, reliability, customs efficiency by country. | [lpi.worldbank.org](https://lpi.worldbank.org/en/home) | Macro · Free |
+| **IMF World Economic Outlook Database** | GDP, inflation, unemployment, current account projections for all countries. Free CSV download. | [imf.org — WEO 2025](https://www.imf.org/en/Publications/WEO/weo-database/2025/april) | Macro · Free |
+| **OECD Data** | Trade, pricing, interest rates, and industry data for OECD member countries. | [data.oecd.org](https://data.oecd.org) | Macro · Free |
+| **BLS — Occupational Employment (Transportation)** | Driver wages, turnover rates, injury/fatality rates by sector. | [bls.gov](https://www.bls.gov/ooh/transportation-and-material-moving) | Macro · Free |
+| **DOE — Alternative Fuels Data Center** | EV charging station density, coverage gaps by ZIP/region, fleet electrification data. | [afdc.energy.gov](https://afdc.energy.gov/stations#/analyze) | Macro · Free |
+
+---
+
+### 1.7 Market Metrics & Operational KPIs
+
+| Source / Dataset | Description | Direct Link | Category |
+|---|---|---|---|
+| **Amazon Sales Dataset (Revenue & Orders)** | Order-level: region, category, ship mode, revenue — dashboard-ready. | [Kaggle — anandshaw2001](https://www.kaggle.com/datasets/anandshaw2001/amazon-sales-dataset) | Structured · Operational |
+| **Amazon Supply Chain Shipment Pricing** | USAID freight cost, delivery performance, vendor, transport mode. | [Kaggle — divyeshardeshana](https://www.kaggle.com/datasets/divyeshardeshana/supply-chain-shipment-pricing-data) | Structured · Operational |
+| **Ecommerce Customer Churn Analysis & Prediction** | Customer churn labels, tenure, satisfaction scores, complaints, coupon usage. | [Kaggle — ankitverma2010](https://www.kaggle.com/datasets/ankitverma2010/ecommerce-customer-churn-analysis-and-prediction) | Structured · Churn |
+| **Financial Statements of Major Companies 2009–2023** | 10-K data for Apple, Google, Amazon, Netflix, Microsoft — 14 years, cost structure (COGS, SG&A, R&D). | [Kaggle — rish59](https://www.kaggle.com/datasets/rish59/financial-statements-of-major-companies2009-2023) | Structured · Financial |
+| **Market Share & Growth Rate Dataset** | Industry-level market share and growth rates — competitive benchmarking. | [Kaggle — dranshikasharma](https://www.kaggle.com/datasets/dranshikasharma/market-share-and-growth-rate-datasets) | Structured · Market |
+
+---
+
+## PART 2 — UNSTRUCTURED (QUALITATIVE) DATA SOURCES
+
+### 2.1 News Articles
+
+| Source / Dataset | Description | Direct Link | Category |
+|---|---|---|---|
+| **NewsAPI** | Free tier: 100 requests/day. Full article text in JSON. Search by keyword (e.g. 'Amazon delivery AI'). | [newsapi.org](https://newsapi.org) | Unstructured · News |
+| **Supply Chain Dive** | Free news on Amazon, UPS, FedEx, AI in logistics. No login. Includes competitor market share data. | [supplychaindive.com](https://www.supplychaindive.com) | Unstructured · News |
+| **TechCrunch — AI Logistics** | Logistics AI startup funding announcements, product launches, competitive moves. | [techcrunch.com/tag/logistics](https://techcrunch.com/tag/logistics/) | Unstructured · News |
+| **Reuters / Bloomberg Logistics News** | Amazon DSP labor disputes, AI deployment incidents, supply chain disruptions. | [reuters.com](https://www.reuters.com/business/retail-consumer) | Unstructured · News **[Freemium]** |
+| **Wall Street Journal — Tech/Antitrust** | Amazon antitrust coverage, AI regulation editorial, acquisition regulatory commentary. | [wsj.com/tech/ai](https://www.wsj.com/tech/ai) | Unstructured · News **[Paid]** |
+| **GDELT Project** | Entire global news archive — billions of records, free bulk download. Events, themes, entities, tone. | [gdeltproject.org](https://gdeltproject.org) | Unstructured · News |
+| **Kaggle — All the News Dataset** | 200,000+ news articles from 15 major publications. Pre-cleaned CSV, ready for NLP. | [Kaggle — snapcrack](https://www.kaggle.com/datasets/snapcrack/all-the-news) | Unstructured · News |
+
+---
+
+### 2.2 Press Releases
+
+| Source / Dataset | Description | Direct Link | Category |
+|---|---|---|---|
+| **Amazon Press Releases (About Amazon)** | Official Amazon press releases — logistics, AI, acquisitions, delivery announcements. | [press.aboutamazon.com](https://press.aboutamazon.com) | Unstructured · Press Release |
+| **PR Newswire** | Free to read and copy. Covers UPS, FedEx, logistics tech companies. | [prnewswire.com](https://www.prnewswire.com) | Unstructured · Press Release |
+| **Business Wire** | Free to read. Major corporate press releases including Amazon logistics and AI announcements. | [businesswire.com](https://www.businesswire.com) | Unstructured · Press Release |
+| **SEC EDGAR — Amazon 8-K (Material Events)** | All Amazon press releases filed with the SEC as 8-K events. Free, official, legally binding. | [SEC EDGAR 8-K Search](https://efts.sec.gov/LATEST/search-index?q=%22Amazon%22&dateRange=custom&startdt=2023-01-01&forms=8-K) | Unstructured · Press Release |
+
+---
+
+### 2.3 Earnings Call Transcripts
+
+| Source / Dataset | Description | Direct Link | Category |
+|---|---|---|---|
+| **Amazon Earnings Call Transcripts** | CEO/CFO commentary on logistics AI, DSP program, delivery speed targets. Strategic intent signals. | [seekingalpha.com — AMZN](https://seekingalpha.com/symbol/AMZN/earnings) | Unstructured · Transcript |
+| **UPS / FedEx Earnings Transcripts** | ORION/Surround competitive commentary, AI investment disclosures. | [seekingalpha.com — UPS](https://seekingalpha.com/symbol/UPS/earnings) | Unstructured · Transcript |
+| **AI Earnings Call Transcript Database (Kaggle)** | AI-focused earnings call transcripts. Directly relevant to the AI acquisition topic. | [Kaggle — robello](https://www.kaggle.com/datasets/robello/ai-earnings-call-transcript-database) | Unstructured · Transcript |
+| **Earnings Call Transcripts — Top 50 Companies (Oct 2024)** | Top 50 company transcripts scraped from AlphaSpread. Includes Amazon. | [Kaggle — ramssvimala](https://www.kaggle.com/datasets/ramssvimala/earning-call-transcripts) | Unstructured · Transcript |
+| **NASDAQ Earnings Call Transcripts 2016–2020** | Historical NASDAQ company transcripts. Useful for trend analysis across years. | [Kaggle — ashwinm500](https://www.kaggle.com/datasets/ashwinm500/earnings-call-transcripts) | Unstructured · Transcript |
+| **Motley Fool — Earnings Transcripts** | Amazon, UPS, FedEx quarterly transcripts — free to read and copy. | [fool.com/earnings-call-transcripts](https://www.fool.com/earnings-call-transcripts/) | Unstructured · Transcript |
+| **UPS Historical Financials & Earnings** | UPS quarterly earnings data and transcripts from UPS Investor Relations. | [investors.ups.com](https://investors.ups.com/quarterly-earnings-and-financials/historical-data) | Unstructured · Transcript |
+
+---
+
+### 2.4 Social Media Sentiment & Reviews
+
+| Source / Dataset | Description | Direct Link | Category |
+|---|---|---|---|
+| **Amazon Reviews — 4 Million (Kaggle)** | 4 million Amazon reviews with positive/negative sentiment labels. fastText CSV format. NLP-ready. | [Kaggle — nabamitachakraborty](https://www.kaggle.com/datasets/nabamitachakraborty/amazon-reviews) | Unstructured · Sentiment |
+| **Amazon Reviews Polarity — 35 Million (Stanford SNAP)** | 35 million Amazon reviews spanning 18 years. Polarity labels (positive/negative). | [Kaggle — kritanjalijain](https://www.kaggle.com/datasets/kritanjalijain/amazon-reviews) | Unstructured · Sentiment |
+| **Amazon US Customer Reviews** | Reviews with metadata, ratings, review text, product category. Multi-year. | [Kaggle — cynthiarempel](https://www.kaggle.com/datasets/cynthiarempel/amazon-us-customer-reviews-dataset) | Unstructured · Sentiment |
+| **Reddit API** | Free API for brand/delivery sentiment scraping. Search r/Amazon, r/AmazonFlexDrivers. | [reddit.com/dev/api](https://www.reddit.com/dev/api/) | Unstructured · Sentiment |
+| **Hugging Face Datasets — Sentiment** | Hundreds of pre-built sentiment datasets. Search 'sentiment', 'amazon', 'delivery'. Free download. | [huggingface.co/datasets](https://huggingface.co/datasets) | Unstructured · Sentiment |
+
+---
+
+### 2.5 Expert Reports, Whitepapers & Legal Documents
+
+| Source / Dataset | Description | Direct Link | Category |
+|---|---|---|---|
+| **Shuaibu et al. (2025) — Drones Journal** | Peer-reviewed: proves 15–25% per-stop cost reduction from AI route optimization. Core citation for risk register. | [doi.org/10.3390/drones9030158](https://doi.org/10.3390/drones9030158) | Expert Report · Free |
+| **IBM Cost of a Data Breach Report 2024** | $4.1M average breach cost in logistics sector. Key source for cybersecurity risk (R46) quantification. | [ibm.com/reports/data-breach](https://www.ibm.com/reports/data-breach) | Expert Report · Free |
+| **McKinsey — Last-Mile Delivery Insights** | Free reports on last-mile delivery cost ($14–17/pkg), AI adoption, and logistics trends. Filter by 'last mile'. | [mckinsey.com — logistics](https://www.mckinsey.com/industries/travel-logistics-and-infrastructure/our-insights) | Expert Report · Free (reg.) |
+| **EU AI Act — Full Official Text (2024)** | Regulation (EU) 2024/1689. Full text free. In force August 1, 2024. Transparency, explainability, high-risk AI requirements. | [eur-lex.europa.eu](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689) | Expert Report · Legal |
+| **NIST AI Risk Management Framework (AI RMF 1.0)** | Structured framework for AI bias, drift, explainability, security risk quantification. | [nvlpubs.nist.gov](https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf) | Expert Report · Free |
+| **CISA AI Cybersecurity Playbook** | US government AI cybersecurity guidance. Free PDF. Key source for cybersecurity risk evidence. | [cisa.gov — AI playbook](https://www.cisa.gov/resources-tools/resources/ai-cybersecurity-collaboration-playbook) | Expert Report · Free |
+| **FTC — Amazon Antitrust Filings** | FTC vs Amazon case history, scope of market definition used, settlement terms. | [ftc.gov — cases](https://www.ftc.gov/legal-library/browse/cases-proceedings) | Expert Report · Legal |
+| **EEOC — Algorithmic Bias Guidance** | AI hiring/routing discrimination guidelines; case precedents for algorithmic disparate impact. | [eeoc.gov](https://www.eeoc.gov/laws/guidance/questions-and-answers-clarify-and-provide-common-interpretation) | Expert Report · Legal |
+| **California AG — CCPA Enforcement Actions** | CCPA enforcement cases, fines issued, sectors targeted. | [oag.ca.gov — CCPA](https://oag.ca.gov/privacy/ccpa) | Expert Report · Legal |
+| **California Clean Miles Standard** | EV adoption requirements for TNCs/delivery fleets; compliance deadlines and penalties. | [arb.ca.gov — Clean Miles](https://ww2.arb.ca.gov/our-work/programs/clean-miles-standard) | Expert Report · Legal |
+| **Morrison Foerster Tech M&A Survey 2025** | 57% of dealmakers expect AI M&A to increase; AI as top acquisition priority. Market timing signals. | [mofo.com — M&A survey](https://www.mofo.com/resources/insights/tech-ma-survey) | Expert Report · Free |
+| **Google Scholar** | Search any topic. Filter by 'Free full text' to get peer-reviewed papers without paywall. | [scholar.google.com](https://scholar.google.com) | Expert Report · Free |
+| **ResearchGate** | Free downloads of industry and academic papers. Search 'AI logistics', 'last mile delivery optimization'. | [researchgate.net](https://www.researchgate.net) | Expert Report · Free |
+| **MIT CSAIL / CTL Research Datasets** | Academic papers on ML model drift rates, training data quality, routing algorithm benchmarks. | [ctl.mit.edu/research](https://ctl.mit.edu/research) | Expert Report · Free |
+| **Grand View Research — Last-Mile Market** | $40.5B → $123.7B market projection (2023–2030). Some free data; full report via Northeastern library. | [grandviewresearch.com](https://www.grandviewresearch.com/industry-analysis/last-mile-delivery-market) | Expert Report · Paid/Library |
+| **Gartner Supply Chain Top 25 Report** | Supply chain maturity benchmarks, technology adoption curves, vendor landscape. Via Northeastern library. | [gartner.com](https://www.gartner.com/en/supply-chain/research) | Expert Report · Paid/Library |
+
+---
+
+## PART 3 — RISK-TO-DATA SOURCE MAPPING (60 Risks)
+
+> Maps each risk in the register to its primary data sources and quantitative method. Risks marked ★ are opportunities (positive risk).
+
+| ID | Risk Description | Category | Score | Primary Data Sources | Quant Method |
+|---|---|---|---|---|---|
+| **R5 ★** | Cost savings via AI route efficiency (opportunity) | Financial | 72 | UPS ORION benchmarks, Amazon DeepFleet, Flexport | Scenario analysis — upside range |
+| **R6** | Initial capital costs — human & physical infrastructure | Financial | 81 | Amazon 10-K (capex), FRED (inflation), IMF (FX rates) | Monte Carlo — PERT cost sim |
+| **R7** | Acquisition overpayment at inflated AI market multiples | Financial | 56 | Finro Q1 2026, CB Insights, Morrison Foerster Survey | Sensitivity analysis — DCF scenarios |
+| **R9** | Currency & macroeconomic risk on integration budget | Financial | 12 | IMF WEO, World Bank, FRED | VaR — currency exposure model |
+| **R10** | Unplanned integration cost overruns | Financial | 42 | McKinsey M&A integration reports, Amazon 10-K | PERT — cost range simulation |
+| **R13** | Third-party data dependency — traffic/weather APIs | Operational | 36 | Google Maps SLA docs, Flexport, HERE API docs | Reliability block diagram model |
+| **R16** | System failure/downtime during peak operations | Operational | 63 | Amazon 10-K, Google Maps SLA, MIT CSAIL | Expected Value = P(failure) × Cost |
+| **R18** | Driver safety incidents from AI time pressure | Operational | 42 | BLS injury data, Amazon DSP incident reports, OSHA | Expected cost = rate × unit cost |
+| **R21** | Failure to win vs UPS ORION / FedEx Surround | Competitive | 42 | UPS/FedEx 10-K, Pitney Bowes Index, eMarketer | Competitive gap scorecard |
+| **R24** | Cost of lagging in AI adoption vs competitors | Competitive | 72 | Stanford AI Index, eMarketer, UPS/FedEx 10-K | Monte Carlo — market share loss sim |
+| **R25** | Global rivals setting AI logistics industry standards | Competitive | 27 | Stanford AI Index, Gartner SC Top 25, World Bank LPI | Qualitative index + Monte Carlo |
+| **R34** | Ethical/bias concerns in delivery outcomes | Reputational | 45 | EEOC guidance, NIST AI RMF, academic bias audit studies | Probability × reputational cost model |
+| **R35** | Negative media — AI-driven driver labor practices | Reputational | 42 | Reuters, WSJ, BLS labor data, TechCrunch | Qualitative risk index → P×I |
+| **R43** | Limited training data for rural/underrepresented zones | Technical | 81 | DOE AFDC (coverage gaps), MIT CTL, NIST AI RMF | Probability distribution — coverage gap |
+| **R44** | AI model drift — accuracy degrades over time | Technical | 56 | NIST AI RMF, MIT CTL research, Amazon earnings transcripts | Regression — drift curve modeling |
+| **R46** | Cybersecurity breach — customer & driver geolocation | Technical | 45 | NIST AI RMF, Amazon 10-K risk notes, CISA advisories | Scenario tree — breach severity × P |
+| **R51** | Conflict with EU AI Act explainability requirements | Legal/Compliance | 36 | EU AI Act official text, McKinsey AI reports | Cost scenario — compliance vs rebuild |
+| **R52** | Bias/discrimination legal costs from route disparities | Legal/Compliance | 42 | EEOC guidance, California AG, FTC enforcement | Expected legal cost distribution |
+| **R54** | CCPA data privacy violation fines | Legal/Compliance | — | California AG — CCPA Enforcement Actions | Expected loss = P(violation) × Fine |
+| **R56** | Antitrust delay / deal blocked by FTC | Legal/Compliance | — | FTC — Amazon Antitrust Filings, SEC EDGAR | Probability × delay cost model |
+
+---
+
+## PART 4 — COVERAGE SUMMARY BY RISK CATEGORY
+
+| Risk Category | # Risks | # Sources Mapped | Top Source | Quant Methods | Data Completeness |
+|---|---|---|---|---|---|
+| Financial | 10 | 7 | Amazon 10-K + SEC EDGAR | Monte Carlo (PERT), DCF Sensitivity, Expected Value | ✅ High |
+| Operational | 10 | 5 | BLS + DOE AFDC + Flexport | Expected Value (P×Cost), Reliability Block Diagram | ✅ High |
+| Competitive | 9 | 5 | Stanford AI Index + eMarketer | Market Share Simulation, Competitive Gap Scorecard | 〜 Medium |
+| Reputational | 8 | 4 | Reuters + EEOC Guidance | Qualitative Index → P×I, Sentiment Scoring | 〜 Medium |
+| Technical | 12 | 5 | NIST AI RMF + MIT CTL | Drift Modeling, Reliability Analysis, Bias Audit | ✅ High |
+| Legal/Compliance | 11 | 5 | EU AI Act + FTC + CA AG | Expected Loss (P×Fine), Compliance Cost Scenarios | ✅ High |
+| Macroeconomic | 2 | 4 | World Bank + FRED + IMF | VaR (FX), Inflation Monte Carlo, Macro Scenario | ✅ High |
+| Unstructured | — | 8 | Earnings Transcripts + McKinsey | Sentiment Analysis, Expert Elicitation | 〜 Medium |
+| **TOTAL** | **60** | **43+** | | | |
+
+---
+
+*ALY 6130 — Risk Management | Group 6 | Amazon AI Acquisition — Data Sources Reference*
