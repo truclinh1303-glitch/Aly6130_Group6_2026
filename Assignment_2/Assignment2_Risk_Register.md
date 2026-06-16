@@ -6,13 +6,7 @@
 
 ---
 
-## Project Problem & Impact Statement
-
-**Problem Statement:**
-Amazon's last-mile delivery network — processing 8 million packages per day at an estimated cost of $14–$17 per package — faces structural cost pressure from AI-optimized competitors. UPS ORION and FedEx Surround have already demonstrated 10–20% route efficiency gains and $300–$400M in annual savings through purpose-built logistics AI deployed over a decade-long investment cycle. To close this competitive gap and avoid ceding same-day delivery pricing power, Amazon is acquiring an AI-powered last-mile delivery optimization platform. This acquisition introduces a concentrated set of strategic, operational, legal, and cybersecurity risks that must be actively managed across the 18–24 month integration window.
-
-**Project Impact Statement:**
-If the acquisition succeeds as designed, Amazon stands to reduce its last-mile cost per package by $1.40–$4.25 (10–25%), generating **$400M–$1.2B in annual operating savings** across its 8M daily package volume — while achieving pre-compliance with the California Clean Miles Standard and EU Urban Vehicle Access regulations before enforcement deadlines. If key risks materialize, however, total exposure spans acquisition write-down, cybersecurity enforcement under CCPA and EU AI Act, competitive loss of same-day delivery pricing leadership, and potential suspension of AI routing operations across all markets. The stakes of both upside and downside scenarios are measured in the hundreds of millions of dollars annually.
+> **Note:** Full problem context, impact statement, and risk treatment strategy rationale are documented in the accompanying *Problem Statement* file. This register focuses on risk identification, scoring, mitigation, and KRI monitoring.
 
 ---
 
