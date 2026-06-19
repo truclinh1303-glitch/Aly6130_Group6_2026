@@ -1,0 +1,227 @@
+# Quantitative Risk Assessment Using the Indicators & Warning (I & W) Technique
+
+## Amazon’s Proposed Acquisition of an AI-Powered Last-Mile Delivery Optimization Platform
+
+### Group 6
+- Sandra Amponsah
+- Linh Hoang
+- Victoria Kpetigo
+
+**Course:** ALY 6130 – Risk Management  
+**Module:** Module 4: Quantitative Risk Assessment (I & W)  
+**Instructor:** Abeba Nigussie Turi  
+**Institution:** Northeastern University  
+**Date:** June 17, 2026
+
+---
+
+# 1. Purpose and Approach
+
+Module 3 established the qualitative prioritization of our risk register; this summary applies the quantitative layer to the three priority risks carried forward:
+
+- **R1:** Commercial market-entry risk
+- **R2:** Cybersecurity breach risk
+- **R3:** Cost-reduction opportunity (positive risk)
+
+The **Indicators & Warning (I & W)** technique frames each risk as a set of observable leading indicators with calibrated warning thresholds. Each indicator is weighted by its diagnostic strength, normalized to a 0–1 warning contribution, and summed into a composite warning score.
+
+That score yields a data-derived probability of occurrence, which is paired with a three-point impact estimate to produce an **Expected Monetary Value (EMV)** and, through **Monte Carlo simulation**, a full distribution of exposure rather than a single point estimate.
+
+---
+
+# 2. Quantitative Steps Taken
+
+## Define Indicators
+For each risk, four leading indicators were specified and anchored to existing KRIs, such as:
+
+- Enterprise win-rate
+- Critical vulnerabilities exceeding the 15-day SLA
+- Per-package cost reduction
+
+Diagnostic weights were assigned to each indicator and summed to **1.0**.
+
+## Calibrate Warnings
+Each indicator was normalized to a **0–1 scale** (inverting lower-is-worse metrics where necessary) using green/amber/red bands.
+
+- Composite score ≥ **0.55** triggers a red warning state.
+
+## Derive Probability
+The composite warning score over a simulated **36-month integration window** was mapped to event probability.
+
+For positive risk **R3**, probability of realization equals:
+
+```text
+1 − Mean Warning
+```
+
+## Quantify Impact & EMV
+Three-point impact estimates were developed:
+
+- Optimistic
+- Most Likely
+- Pessimistic
+
+A PERT estimate was used to calculate expected impact.
+
+```text
+EMV = Probability × Expected Impact
+```
+
+## Simulate & Predict
+A **50,000-trial Monte Carlo simulation** propagated uncertainty in:
+
+- Probability (Beta distributions)
+- Impact (PERT distributions)
+
+Machine-learning models (gradient boosting and logistic regression) were trained on the indicator panel to evaluate whether warning states could be predicted from indicators.
+
+---
+
+# 3. I & W Assessment of the Three Risks
+
+The I & W-derived probabilities closely reconcile with the qualitative register scores:
+
+| Risk | Quantitative Probability | Qualitative Probability |
+|--------|--------|--------|
+| R1 | 0.65 | 0.70 |
+| R2 | 0.47 | 0.50 |
+| R3 | 0.62 | 0.70 |
+
+This validates the earlier qualitative judgment while adding a defensible quantitative basis.
+
+Real-world benchmark parameters include:
+
+- UPS ORION route optimization savings of approximately **US$300–400 million annually**
+- Average global data breach cost of **US$4.44 million**
+- Average U.S. data breach cost of **US$10.22 million**
+- Last-mile delivery representing approximately **53% of total shipping costs**
+
+---
+
+## Risk Assessment Summary
+
+| Risk | Leading Indicators & Warning Threshold | Probability Derivation | Impact (O/M/P $M) | EMV ($M) | P95 Exposure ($M) |
+|--------|--------|--------|--------|--------|--------|
+| **R1** | Win-rate vs ORION/Surround (0.40), competitor releases (0.20), sales-engineering vacancy gap (0.20), benchmark deficit (0.20). Red when composite ≥ 0.55. | Mean warning = 0.61; blended with register anchor. P(event) ≈ 0.65. | 200 / 500 / 1,200 | 368 | 891 |
+| **R2** | Critical vulnerabilities >15-day SLA (0.35), anomalous geo-API events (0.25), zero-trust coverage (0.25), MTTR days (0.15). | Mean warning = 0.44; blended with anchor. P(event) ≈ 0.47. | 250 / 450 / 900 | 231 | 701 |
+| **R3 (Positive)** | Cost reduction vs baseline (0.40), driver adoption (0.25), OTDPI (0.20), pilot regions on target (0.15). | P(realization) = 1 − 0.44 = 0.56; blended with anchor. P ≈ 0.62. | +400 / +700 / +1,200 | +453 | +991 |
+
+---
+
+# 4. Monte Carlo and Machine-Learning Results
+
+The Monte Carlo simulation converted point estimates into loss/gain distributions.
+
+### R1: Commercial Market-Entry Risk
+- Most likely exposure: **~$567M**
+- 95th percentile downside: **~$891M**
+
+### R2: Cybersecurity Breach Risk
+- Most likely exposure: **~$492M**
+- 95th percentile downside: **~$701M**
+
+### R3: Cost-Reduction Opportunity
+- Most likely upside: **~$733M**
+- 95th percentile upside: **~$991M**
+
+## Machine Learning Performance
+
+| Risk | ROC-AUC |
+|--------|--------|
+| R1 | 0.87 |
+| R2 | 0.89 |
+| R3 | 1.00 |
+
+### Most Important Early-Warning Indicators
+
+| Risk | Dominant Indicator |
+|--------|--------|
+| R1 | Sales-engineering vacancy gap |
+| R2 | Anomalous geolocation API traffic |
+| R3 | Driver adoption of AI routes |
+
+These indicators should receive the highest monitoring priority.
+
+---
+
+# 5. Updated Risk Treatment & Response Plan (RT & RP)
+
+The quantitative assessment informs updated treatment strategies.
+
+| Risk | Risk Title | Prior Qualitative Score | I&W Probability | ML AUC | MC EMV ($M) | Treatment Strategy | Residual EMV ($M) |
+|--------|--------|--------|--------|--------|--------|--------|--------|
+| R1 | Commercial market-entry / win-rate | 7×6 = 42 (High) | 0.65 | 0.87 | 368 | Mitigate (hire sales engineers, benchmarking, pricing actions) | 239 (-35%) |
+| R2 | Cybersecurity breach – geo/address data | 5×9 = 45 (Very High) | 0.47 | 0.89 | 231 | Mitigate + Transfer (zero-trust architecture, cyber insurance) | 104 (-55%) |
+| R3 | Cost reduction & sustainability (upside) | 7×8 = 56 (Upside) | 0.62 | 1.00 | +453 | Exploit / Enhance (accelerated rollout, pre-compliance activities) | +534 (+18%) |
+
+---
+
+# 6. Conclusion
+
+The quantitative I & W analysis confirmed the qualitative prioritization while transforming it into actionable financial exposure estimates and monitorable warning signals.
+
+Key conclusions include:
+
+- **R2** remains the highest-severity downside risk despite moderate probability and should be partially transferred through cyber insurance.
+- **R1** warrants continued mitigation investment through staffing, benchmarking, and pricing strategies.
+- **R3** represents a significant strategic opportunity and should be actively exploited.
+
+The supporting Jupyter notebook and indicator dataset reproduce all calculations and figures presented in this assessment.
+
+> Note: The indicator-level dataset is synthetic and intended solely to demonstrate the I & W methodology. Cost estimates, probability anchors, and competitive assumptions were calibrated using published benchmark data.
+
+---
+
+# References
+
+COSO. (2017). *Enterprise Risk Management—Integrating with Strategy and Performance*. Committee of Sponsoring Organizations of the Treadway Commission.
+
+IBM. (2025). *Cost of a Data Breach Report 2025*. IBM Security.  
+https://www.ibm.com/reports/data-breach
+
+INFORMS. (2016). *UPS On-Road Integrated Optimization and Navigation (ORION) Project*.  
+https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/UPS
+
+ISO. (2018). *ISO 31000:2018 Risk Management—Guidelines*. International Organization for Standardization.
+
+Project Management Institute. (2017). *A Guide to the Project Management Body of Knowledge (PMBOK Guide)* (6th ed.).
+
+Shuaibu, A. S., Mahmoud, A. S., & Sheltami, T. R. (2025). *A Review of Last-Mile Delivery Optimization: Strategies, Technologies, Drone Integration, and Future Trends*. Drones, 9(3), 158.  
+https://doi.org/10.3390/drones9030158
+
+Statista. (2024). *Last-Mile Delivery Share of Total Shipping Costs Worldwide from 2018 to 2023*.  
+https://www.statista.com/statistics/1434298/last-mile-share-of-total-shipping-costs/
+
+---
+
+# Appendix A. Officially-Sourced Benchmark Parameters and Data Provenance
+
+| ID | Risk | Parameter | Value | Source |
+|--------|--------|--------|--------|--------|
+| B01 | R2 | Global average breach cost | $4.44M (2025) | IBM |
+| B02 | R2 | U.S. average breach cost | $10.22M (2025) | IBM |
+| B03 | R2 | Healthcare breach cost | $7.42M (2025) | IBM |
+| B04 | R2 | Breach lifecycle | 241 days | IBM |
+| B05 | R3 | UPS ORION annual savings (low) | $300M | INFORMS |
+| B06 | R3 | UPS ORION annual savings (high) | $400M | INFORMS |
+| B07 | R3 | UPS ORION deployment cost | $250M | INFORMS |
+| B08 | R3 | Annual miles reduced | 100M miles | INFORMS |
+| B09 | R3 | Annual fuel saved | 10M gallons | INFORMS |
+| B10 | R3 | Annual CO₂ reduction | 100,000 metric tons | INFORMS |
+| B11 | R1 | Last-mile share of shipping cost | 53% | Statista |
+| B12 | R1 | Last-mile share of shipping cost (2018) | 41% | Statista |
+| B13 | R1 | Urban last-mile cost | $10/package | AMCS |
+| B14 | R1 | Rural last-mile cost | $50/package | AMCS |
+| B15 | R1 | Failed delivery cost | $17.78 | AMCS |
+| M01 | All | Last-mile optimization methodology review | Reference | MDPI |
+| M02 | All | ISO 31000 ERM framework | Framework | ISO |
+| M03 | All | COSO ERM framework | Framework | COSO |
+| M04 | R1 | U.S. e-commerce retail sales benchmark | Reference | U.S. Census Bureau |
+
+### Data Provenance
+
+- Indicator dataset is synthetic and reproducible (SEED = 42).
+- Magnitudes are calibrated against public benchmark sources.
+- IBM reports are available after registration.
+- INFORMS, MDPI, and U.S. Census data are publicly accessible.
+- Statista and ISO resources may require subscription or institutional access.
