@@ -157,4 +157,4 @@ A full reference list appears in `Signature Assignment/report/Final_Report.docx`
 
 ## Academic integrity & use
 
-This repository is coursework submitted for ALY 6130 at Northeastern University. The acquisition scenario is a course case study; figures use a synthetic, benchmark-calibrated dataset and do not represent actual Amazon internal data. Please do not copy or submit this work as your own.<img width="2223" height="582" alt="fig1_monte_carlo" src="https://github.com/user-attachments/assets/b564c304-94cf-4262-a82e-5cc20336ec6b" />
+This repository is coursework submitted for ALY 6130 at Northeastern University. The acquisition scenario is a course case study; figures use a synthetic, benchmark-calibrated dataset and do not represent actual Amazon internal data. Please do not copy or submit this work as your own.
