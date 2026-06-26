@@ -1,0 +1,217 @@
+ALY 6130 -- ENTERPRISE RISK MANAGEMENT
+
+Assignment 3: Risk Assessment, Risk Calculation & Heat Map
+
+REVISED SUBMISSION --- Addressing Lecturer Feedback 
+
+1.  Revision Rationale --- Addressing Lecturer Feedback
+
+The original submission received the following feedback from Prof. Abeba
+Nigussie Turi (June 10, 2026). Each point is addressed systematically in
+this revised submission.
+
+2.  Project Overview
+
+Amazon.com, Inc. processes approximately 8 million packages per day at
+an estimated residential delivery cost of \$14--\$17 per package. The
+proposed acquisition involves an AI-powered last-mile route optimization
+platform --- exemplified by Amazon's March 2026 acquisition of RIVR, a
+Zurich-based physical AI and robotics startup. The platform integrates
+real-time traffic, weather, and historical delivery data to recommend
+efficient routes across Amazon's 1,100+ fulfillment facilities and
+200,000+ Delivery Service Partner (DSP) associates.
+
+Last-mile delivery represents 50--60% of total parcel costs, and AI
+route optimization reduces per-package costs by 10--25% at scale. The
+competitive context is urgent: UPS ORION saves \$400 million per year
+(14-year operational history); FedEx Surround processes 15 million
+shipments daily. With FY2025 net sales of \$716.9 billion, Amazon's EU
+AI Act exposure alone approaches \$50.2 billion --- making systematic
+risk governance an existential financial requirement, not a compliance
+formality.
+
+3.  Revised Scoring Methodology
+
+3.1 Recalibration Principles
+
+The original scores were recalibrated under three principles:
+
+Scores must reflect Amazon's actual operational context --- not generic
+templates. A likelihood of 9 (≥80% probability) should only appear for
+events that are near-certain given current conditions.
+
+Root causes and resulting risks are merged into one consolidated entry.
+Listing 'poor training data' and 'algorithm performance degradation' as
+separate risks double-counts the same event chain and inflates the
+register artificially.
+
+Impact scores must be anchored to financial ranges. Impact 9 (Extreme,
+\$5B+) is reserved for EU AI Act or equivalent existential exposures ---
+not routine operational events.
+
+3.2 Likelihood Scale
+
+3.3 Impact Scale
+
+4.  Top 6 Risks --- Mapped with Unique Sub-Risks
+
+Per lecturer feedback, the six highest-priority risks are mapped below
+with their unique risk IDs, scores, and distinct mitigation responses.
+Each risk cluster addresses a different failure mode within the same
+domain.
+
+5.  Revised Risk Register --- Highlights by Category
+
+The complete risk register (32 consolidated risks across 6 categories)
+is in the accompanying Excel workbook. The tables below show the
+highest-scoring risks per category with evidence anchors.
+
+5.1 AI Strategy & Governance
+
+5.2 AI Decision Quality
+
+5.3 Cybersecurity & Privacy
+
+5.4 Algorithmic Bias & Fairness
+
+5.5 Vendor & Third-Party Dependency
+
+5.6 Financial & ROI
+
+5.7 Legal & Regulatory Compliance
+
+6.  Opportunities Register (Separated from Risk Register)
+
+Per lecturer feedback, opportunities are separated from negative risks.
+These are positive risk events managed with Exploit or Enhance
+strategies. They appear in the Opportunities tab of the Excel workbook.
+
+7.  Risk Summary by Severity and Category
+
+8.  KRI Monitoring Framework
+
+The following Key Risk Indicators (KRIs) provide early-warning signals
+for the highest-priority risks. KRIs must be reviewed at the cadences
+indicated. RED status triggers immediate escalation to the AI Risk
+Governance Committee.
+
+9.  Strategic Implications & Risk Governance Recommendations
+
+Based on the revised risk register, the following governance actions are
+recommended:
+
+Establish a dedicated AI Risk Governance Committee with representation
+from General Counsel, CISO, AI Ethics Board, and Data Governance ---
+with authority to pause integration milestones if KRI RED thresholds are
+breached.
+
+Separate the management of AI Decision Quality risks from Cybersecurity
+& Privacy risks. These are distinct failure modes requiring different
+expertise, tools, and escalation paths.
+
+Treat Algorithmic Bias & Fairness as a standalone risk category. The
+consolidation of algorithmic bias, explainability, and accountability
+risks into one category ensures they receive dedicated governance
+attention --- not subordination under general 'Technical' risks as in
+the original submission.
+
+Budget for tail-risk events in the Low Likelihood × High Impact
+quadrant. EU AI Act non-compliance (\~\$50.2B exposure) and class-action
+bias litigation (\$50M--\$500M) require legal contingency funds and
+modular architecture.
+
+Maintain the heat map as a living governance document. Risk scores must
+be refreshed quarterly as integration progresses and KRI data
+accumulates.
+
+Opportunities must be actively exploited --- not passively acknowledged.
+The AI route efficiency opportunity (O1, Score 72) represents
+\$400M--\$1.36B annual savings. Failure to exploit it is itself a risk
+(captured in R26, Cost of Lagging, Score 72).
+
+10. Conclusion
+
+This revised report addresses all five points of Prof. Turi's feedback:
+risk consolidation, opportunity separation, categorical restructuring,
+score recalibration, and expanded mapping of the six highest-priority
+risks. The revised register of 32 consolidated risks across 6 categories
+reflects a more defensible, actionable, and academically rigorous risk
+framework than the original 32-item, 6-category register which contained
+duplications and calibration errors.
+
+The revised scoring confirms 5 Very High risks (score ≥ 54), 11 High
+risks (score 40--53), 13 Moderate (18--39), and 3 Low (\< 18). System
+downtime (R7, score 63) and cybersecurity breach (R10, score 45) emerge
+as the operationally critical risks requiring immediate mitigation
+investment. EU AI Act compliance (R27, score 56) and delayed ROI (R22,
+score 56) represent the strategic risks with the greatest long-term
+consequence if unmanaged.
+
+References
+
+Amazon.com, Inc. (2025). Annual report on Form 10-K for the fiscal year
+ended December 31, 2024. U.S. Securities and Exchange Commission.
+
+BCG. (2026, February 3). Last-mile delivery accounts for 50--60% of
+total parcel costs. Boston Consulting Group.
+
+California Attorney General. (2023). California Consumer Privacy Act
+(CCPA). California Department of Justice.
+
+CCJ Digital. (2026). Supply chain cyber threats: How malicious AI puts
+logistics data at risk.
+
+CISO. (2024). Supply-chain software attack trends report. Cybersecurity
+and Infrastructure Security Agency.
+
+COSO. (2017). Enterprise risk management: Integrating with strategy and
+performance.
+
+Deep Tech Nation Switzerland. (2026, March 20). Amazon acquires RIVR:
+How an ETH Zurich lab built the robot that delivers your packages.
+
+European Parliament. (2024). Regulation (EU) 2024/1689 on artificial
+intelligence (EU Artificial Intelligence Act).
+
+Federal Trade Commission. (2023). FTC review of Amazon acquisitions and
+market concentration.
+
+FedEx Corporation. (2024). FedEx Surround platform overview. FedEx
+Investor Relations.
+
+Financial Content. (2026, March 19). Amazon (AMZN) 2026 analysis: The
+\$200 billion AI and aerospace pivot.
+
+Gartner. (2024). Top strategic technology trends for 2024.
+
+Hübner, A., Kuhn, H., & Wollenburg, J. (2023). Dynamic route
+optimization in urban last-mile logistics. Transportation Research Part
+E, 169, 102978.
+
+IBM Security. (2024). Cost of a data breach report 2024. IBM
+Corporation.
+
+ISO. (2018). ISO 31000:2018 --- Risk management: Guidelines.
+International Organization for Standardization.
+
+McKinsey & Company. (2022). The last-mile delivery challenge.
+
+McKinsey & Company. (2023). Why do most transformations fail?
+
+Morrison Foerster. (2026, January 15). M&A in 2025 and trends for 2026.
+
+Reuters. (2025, October 22). Amazon sees faster delivery speeds with
+hi-tech driver eyeglasses and AI.
+
+Shuaibu, A. S., Mahmoud, A. S., et al. (2025). A review of last-mile
+delivery optimization. Drones, 9(3), 158.
+
+Skadden. (2025, June). M&A in the AI era: Key antitrust and national
+security considerations.
+
+Transvirtual. (2026, January 30). Last-mile delivery trends to look out
+for in 2026.
+
+UPS. (2023). 2023 sustainability report: Technology and innovation.
+
+Verizon. (2024). Data breach investigations report. Verizon Business.
