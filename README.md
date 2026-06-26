@@ -26,7 +26,6 @@ This repository documents a complete ERM analysis of that acquisition, organized
 ├── .gitignore
 │
 ├── Assignment 1                                      # Module 1 — assignment brief
-├── S.W.O.T. analysis (Group Project) 1 1.docx        # Module 1 — SWOT, brainstorming, preliminary controls
 ├── Data Source References                            # Consolidated registry of all external data sources
 ├── Group6_benchmark_parameters-1-assignment 4.csv    # Benchmark parameters (root copy)
 ├── Group6_indicator-1-assignment 4.csv               # Indicator panel (root copy)
