@@ -1,0 +1,141 @@
+# ALY 6130 — Enterprise Risk Register (REVISED)
+### Amazon AI Last-Mile Acquisition (RIVR)
+
+> **Revision note:** Risks and root causes consolidated; scores recalibrated; opportunities separated to a dedicated register per lecturer feedback (Turi, June 10 2026). Categories restructured to surface *AI Decision Quality*, *Cybersecurity & Privacy*, and *Algorithmic Bias & Fairness*.
+
+**Scoring:** Risk Score = Likelihood (L, 1–9) × Impact (I, 1–9)
+**Severity thresholds:** VERY HIGH ≥ 54 · HIGH 40–53 · MODERATE 18–39 · LOW < 18
+
+---
+
+## 1. Risk Register
+
+### ▸ AI Strategy & Governance
+
+| # | Risk Description | L | I | Score | Severity | Owner | Treatment | Response Summary | Evidence Anchor |
+|---|---|--:|--:|--:|---|---|---|---|---|
+| 1 | AI strategy failure — absence of a clear AI roadmap leads to misaligned priorities, resource waste, and failed integration | 7 | 8 | 56 | VERY HIGH | CEO / CTO / Strategy | Mitigation | Establish an AI Steering Committee with quarterly milestone reviews; tie AI roadmap to 3-year business plan. | Gartner (2024): 85% of AI projects fail to deliver intended business value |
+| 2 | AI governance gap — no defined accountability framework for AI decision-making, leading to unchecked algorithmic errors | 7 | 6 | 42 | HIGH | Chief AI Officer / Board | Mitigation | Implement COSO-aligned AI governance charter; designate an AI Risk Owner per business unit. | COSO ERM (2017): governance gaps are a primary cause of AI program failure |
+| 3 | Executive sponsorship failure — AI initiative loses C-suite buy-in mid-deployment causing resource withdrawal | 5 | 6 | 30 | MODERATE | CEO / Board | Mitigation | Quarterly board-level AI progress dashboards; link AI KPIs to executive compensation. | McKinsey (2023): 70% of tech transformations fail without executive sponsorship |
+| 4 | Change management failure — organizational resistance and inadequate training derail AI adoption | 7 | 4 | 28 | MODERATE | CHRO / Change Lead | Mitigation | Structured 18-month change program; driver and dispatcher training modules; pulse surveys. | McKinsey (2023): organizational resistance cited as #1 digital transformation barrier |
+
+### ▸ AI Decision Quality
+
+| # | Risk Description | L | I | Score | Severity | Owner | Treatment | Response Summary | Evidence Anchor |
+|---|---|--:|--:|--:|---|---|---|---|---|
+| 5 | AI model quality degradation — insufficient or biased training data (incl. underrepresented rural zones) causes poor routing decisions and model drift post-deployment | 7 | 8 | 56 | VERY HIGH | Head of Data Science / CTO | Mitigation | Unified data quality scorecard (≥95% pass gate); synthetic data augmentation for rural zones; monthly drift monitoring; human override mandatory when confidence <80%. | IBM Security (2024): training data quality failures cause 62% of AI routing errors; Hübner et al. (2023): model drift = top AI logistics failure |
+| 6 | Data pipeline failures — real-time data feed errors (traffic, weather, demand) degrade AI routing accuracy | 5 | 6 | 30 | MODERATE | Data Engineering Lead | Mitigation | Automated validation gates; dual-source data feeds; fallback to last-known-good data. | Transvirtual (2026): real-time data feed failure = $17.20/failed delivery |
+| 7 | System downtime during peak operations (Prime Day, holiday surge) — AI routing platform unavailability causing delivery failures | 7 | 9 | 63 | VERY HIGH | CTO / Site Reliability Engineering | Mitigation | 99.5% uptime SLA; active-active multi-region architecture; quarterly DR drills; manual dispatch fallback within 15 minutes. | Prime Day est.: $33.6M revenue impact per 2-hour outage |
+| 8 | Integration failure with existing infrastructure — API incompatibilities or data format mismatches halt routing platform deployment | 5 | 6 | 30 | MODERATE | IT / Engineering Lead | Mitigation | Full API compatibility testing pre-go-live; load testing at 2× peak; manual dispatch fallback during integration window. | McKinsey (2023): 70% of tech integrations exceed original timeline |
+| 9 | AI model scalability failure — system cannot handle volume spikes (Prime Day est. 2× normal load) without performance degradation | 5 | 6 | 30 | MODERATE | CTO / Cloud Architecture | Mitigation | AWS auto-scaling configured at 2× peak volume; load test every quarter; capacity buffer of 30%. | AWS (2024): auto-scaling required at 2× peak for Prime Day workloads |
+
+### ▸ Cybersecurity & Privacy
+
+| # | Risk Description | L | I | Score | Severity | Owner | Treatment | Response Summary | Evidence Anchor |
+|---|---|--:|--:|--:|---|---|---|---|---|
+| 10 | Cybersecurity breach of AI routing platform — adversarial actors exploit API vulnerabilities, exposing routing logic and customer/driver data | 5 | 9 | 45 | HIGH | CISO | Mitigation | Zero-trust architecture; annual pen testing; API gateway with rate limiting; incident response plan with 4-hour RTO. | CCJ Digital (2026): 33% of AWS credentials exposed in logistics sector; IBM (2024): avg breach cost $4.1M |
+| 11 | Customer and driver data privacy breach — unauthorized access to PII in AI training datasets or operational logs | 5 | 8 | 40 | HIGH | CISO / Privacy Officer | Mitigation | Data minimization policy; AES-256 encryption at rest and in transit; Privacy Impact Assessment before deployment; CCPA breach notification protocol. | CCPA: $7,500/intentional violation × 100M+ Amazon customers |
+| 12 | Ransomware or supply-chain cyberattack on third-party AI vendor — malicious code injected into routing platform updates | 3 | 8 | 24 | MODERATE | CISO / Procurement | Mitigation | Vendor SOC 2 Type II and ISO 27001 certification required; code signing for all updates; network isolation of vendor access. | CISA (2024): supply-chain software attacks increased 633% since 2019 |
+| 13 | Insider threat — employee or contractor misuses access to AI model parameters or customer delivery data | 3 | 6 | 18 | MODERATE | CISO / HR | Mitigation | Principle of least privilege; DLP monitoring; mandatory AI ethics training; quarterly access reviews. | Verizon DBIR (2024): insider threats account for 19% of data breaches |
+
+### ▸ Algorithmic Bias & Fairness
+
+| # | Risk Description | L | I | Score | Severity | Owner | Treatment | Response Summary | Evidence Anchor |
+|---|---|--:|--:|--:|---|---|---|---|---|
+| 14 | Delivery zone algorithmic bias — AI routing systematically deprioritizes deliveries to lower-income or minority neighborhoods | 5 | 9 | 45 | HIGH | AI Ethics Board / Chief Diversity Officer | Mitigation | Pre-deployment fairness audit by independent third party; bi-annual delivery disparity monitoring by zip code; FTC-reportable KRI (gap >5% triggers escalation). | FTC (2023): delivery disparity investigation; MIT (2022): AI delivery bias documented in 14 US cities |
+| 15 | Driver workload bias — AI routing assigns disproportionately high-risk or high-volume routes to specific driver demographics | 5 | 6 | 30 | MODERATE | AI Ethics Board / CHRO | Mitigation | Route equity analysis quarterly; human override rights for drivers; OSHA compliance review of AI-generated stop density. | Reuters (2025): OSHA scrutiny of Amazon AI driver tools; OSHA: $156K/willful violation |
+| 16 | Opacity of AI decisions — inability to explain routing recommendations to regulators, customers, or drivers (EU AI Act explainability requirements) | 7 | 6 | 42 | HIGH | General Counsel / AI Ethics Board | Mitigation | Explainability logging for every AI routing decision; regulator-ready documentation; EU AI Act counsel retained. | EU AI Act Art. 13: high-risk AI systems must provide explainability to users and regulators |
+| 17 | Algorithmic accountability gap — no audit trail for AI decisions leading to inability to investigate complaints or litigation | 5 | 6 | 30 | MODERATE | AI Ethics Board / Legal | Mitigation | Immutable audit log of all AI routing decisions (5-year retention); independent annual accountability report. | EU AI Act Art. 12: audit logs mandatory for high-risk AI systems for minimum 5 years |
+
+### ▸ Vendor & Third-Party Dependency
+
+| # | Risk Description | L | I | Score | Severity | Owner | Treatment | Response Summary | Evidence Anchor |
+|---|---|--:|--:|--:|---|---|---|---|---|
+| 18 | Vendor lock-in / switching cost — over-reliance on single AI routing vendor creates operational and financial dependency | 7 | 6 | 42 | HIGH | Procurement / CTO | Transfer | Open API standards mandated in contract; internal fallback routing capability built in parallel; multi-vendor evaluation every 2 years. | Morrison Foerster (2026): vendor lock-in = top M&A AI integration risk |
+| 19 | Vendor financial instability or acquisition — AI platform vendor is acquired, pivots, or becomes insolvent, disrupting service continuity | 5 | 8 | 40 | HIGH | Procurement / Legal | Transfer | Source code escrow agreement; SLA with 12-month wind-down period; annual vendor financial health review. | CB Insights (2025): 38% of AI startups acquired within 3 years, disrupting enterprise contracts |
+| 20 | Third-party data provider failure — real-time data feeds (traffic, weather, maps) from third parties go offline during peak periods | 5 | 6 | 30 | MODERATE | CTO / Procurement | Transfer | Minimum two independent data providers per feed type; SLA requiring 99.9% uptime; fallback to cached data with degraded-mode alert. | Transvirtual (2026): third-party data dependency = leading cause of AI routing downtime |
+| 21 | Technology obsolescence — AI routing platform becomes outdated within 3 years as competitors adopt more advanced models | 5 | 4 | 20 | MODERATE | CTO / Strategy | Mitigation | Negotiate upgrade clauses in vendor contract; monitor competitive AI adoption quarterly; budget for platform refresh in Year 3 TCO model. | BCG (2026): AI routing models require major retraining every 18–24 months |
+
+### ▸ Financial & ROI
+
+| # | Risk Description | L | I | Score | Severity | Owner | Treatment | Response Summary | Evidence Anchor |
+|---|---|--:|--:|--:|---|---|---|---|---|
+| 22 | Delayed ROI realization — AI routing savings (10–25% per-package cost reduction) not achieved within 18-month business case window | 7 | 8 | 56 | VERY HIGH | CFO / COO | Mitigation | Monthly per-package cost KRI vs. baseline; phased 18-month deployment with go/no-go gates at 6, 12, 18 months; ROI review at each gate. | Shuaibu et al. (2025): 10–25% per-package reduction; UPS ORION took 14 years to achieve $400M/yr |
+| 23 | Acquisition overpayment at inflated AI market multiples — price paid for AI platform exceeds realistic value given limited pilot data | 7 | 6 | 42 | HIGH | CFO / M&A Legal | Transfer | Independent valuation with 3-city pilot data adjustment; earnout structure tied to enterprise-scale performance milestones. | Morrison Foerster (2026): inflated AI M&A multiples; RIVR acquisition valuation undisclosed |
+| 24 | Integration cost overruns — technology and operational integration costs exceed approved budget by >20% | 7 | 6 | 42 | HIGH | CFO / Program Management | Mitigation | Staged budget releases per integration milestone; contingency reserve of 20%; monthly variance reporting to CFO. | McKinsey (2023): 70% of tech transformations exceed budget |
+| 25 | Initial capital expenditure burden — upfront investment in AI infrastructure, retraining, and facility upgrades strains balance sheet | 9 | 6 | 54 | VERY HIGH | CFO / Engineering | Mitigation | Phase investment across 18-month deployment; negotiate vendor deferred payment terms; model sensitivity at ±15% capex variance. | Amazon $200B capex plan (Financial Content, 2026) |
+| 26 | Cost of lagging in AI adoption — inaction allows UPS ORION and FedEx Surround to widen cost and efficiency gap | 9 | 8 | 72 | VERY HIGH | CEO / Strategy | Mitigation | Treat AI adoption as a strategic imperative; define go/no-go milestone Q4 2026; publish competitive benchmarks quarterly. | BCG (2026): last-mile = 50–60% parcel costs; UPS ORION $400M/yr; FedEx Surround 15M shipments/day |
+
+### ▸ Legal & Regulatory Compliance
+
+| # | Risk Description | L | I | Score | Severity | Owner | Treatment | Response Summary | Evidence Anchor |
+|---|---|--:|--:|--:|---|---|---|---|---|
+| 27 | EU AI Act non-compliance — Amazon's AI routing platform classified as high-risk under EU AI Act, requiring extensive conformity assessment | 7 | 8 | 56 | VERY HIGH | General Counsel / Compliance | Mitigation | EU AI Act counsel retained; high-risk AI system classification assessment pre-deployment; conformity documentation ready for regulators. | EU AI Act 2024: fines up to €35M or 7% global revenue (~$50.2B for Amazon FY2025) |
+| 28 | CCPA / data privacy regulatory enforcement — regulators impose fines for unlawful processing of California customer delivery data | 5 | 8 | 40 | HIGH | CISO / Privacy Officer / Legal | Mitigation | Annual CCPA compliance audit; data minimization; consumer rights portal; legal response fund for enforcement actions. | California AG (2023): CCPA $7,500/intentional violation |
+| 29 | Labor law violations from AI routing pressure — AI-generated stop density or time windows violate OSHA or labor regulations for DSP drivers | 5 | 8 | 40 | HIGH | General Counsel / CHRO | Mitigation | AI route parameters reviewed against OSHA standards; driver union consultation; $156K/willful violation reserve maintained. | Reuters (2025): OSHA scrutiny Amazon AI tools; OSHA $156K/willful violation |
+| 30 | Bias and discrimination litigation — class-action lawsuits arising from AI delivery disparities by race, income, or geography | 5 | 6 | 30 | MODERATE | General Counsel / AI Ethics Board | Mitigation | Pre-deployment third-party fairness audit; legal response fund ($50M–$500M comparable settlements); monitor FTC enforcement actions. | FTC (2023) delivery disparity investigation; comparable tech discrimination settlements $50M–$500M |
+| 31 | Antitrust scrutiny of acquisition — FTC monopolization review of Amazon's AI platform acquisition delays or blocks deal | 5 | 6 | 30 | MODERATE | General Counsel / M&A | Mitigation | Antitrust counsel retained pre-announcement; FTC monopolization trial (Oct 2026) monitored; divestiture scenario modeled. | FTC monopolization trial scheduled October 2026 (Skadden, 2025) |
+| 32 | Regulatory changes requiring AI system redesign — new AI or data regulations mandate architectural changes post-deployment | 3 | 6 | 18 | MODERATE | Compliance / CTO | Mitigation | Monitor global AI regulation pipeline; modular architecture to absorb regulatory changes without full restart. | EU AI Act, CCPA, NIST AI RMF 2.0 (2024): pace of AI regulation accelerating globally |
+
+---
+
+## 2. Opportunities Register
+
+> Opportunities are **positive risks** — events that, if they occur, would benefit the project. Managed separately from negative risks and treated with **Exploit** or **Enhance** strategies (separated per lecturer feedback).
+
+| # | Opportunity Description | Category | L | I | Score | Priority | Owner | Treatment | Response Summary |
+|---|---|---|--:|--:|--:|---|---|---|---|
+| 1 | AI route efficiency cost savings — 10–25% per-package cost reduction across 8M daily packages | Financial Opportunity | 9 | 8 | 72 | HIGH | COO / Finance | Exploit | Define monthly KPI (cost/stop, fuel savings vs. baseline); accelerate deployment to capture $400M–$1.36B annual savings. |
+| 2 | Competitive market leadership — first-mover advantage in AI-powered last-mile logistics creates barrier to entry | Strategic Opportunity | 7 | 8 | 56 | HIGH | CEO / Strategy | Exploit | Publish AI benchmarks externally; pursue logistics-as-a-service revenue from third-party retailers via Amazon Shipping. |
+| 3 | AI platform commercialization — Amazon's AI routing platform can be licensed to DSP partners and third-party retailers | Strategic Opportunity | 5 | 6 | 30 | MEDIUM | CEO / Business Development | Exploit | Develop enterprise licensing model post-internal deployment; target Package.ai/Bringg market segment. |
+| 4 | Sustainability and ESG gains — AI routing reduces fuel consumption and carbon emissions, enhancing ESG profile | Strategic Opportunity | 7 | 4 | 28 | MEDIUM | Chief Sustainability Officer | Exploit | Track CO₂ reduction per delivery in ESG report; link routing efficiency to Amazon Climate Pledge commitments. |
+
+---
+
+## 3. Risk Heat Map (Likelihood × Impact Matrix)
+
+Cells show the **score** at each L×I intersection and the risk IDs (R#) that map to it.
+Legend: **VERY HIGH ≥ 54** · **HIGH 40–53** · **MODERATE 18–39** · **LOW < 18**
+
+| Impact ↓ \ Likelihood → | L=1 Very Unlikely | L=3 Unlikely | L=5 50-50 | L=7 Likely | L=9 Very Likely |
+|---|---|---|---|---|---|
+| **9 – Extreme** | 9 | 27 | **45** · R10, R14 | **63** · R7 | 81 |
+| **8 – Very High** | 8 | **24** · R12 | **40** · R11, R19, R28, R29 | **56** · R1, R5, R22, R27 | **72** · R26 |
+| **6 – High** | 6 | **18** · R13, R32 | **30** · R3, R6, R8, R9, R15, R17, R20, R30, R31 | **42** · R2, R16, R18, R23, R24 | **54** · R25 |
+| **4 – Moderate** | 4 | 12 | **20** · R21 | **28** · R4 | 36 |
+| **2 – Low** | 2 | 6 | 10 | 14 | 18 |
+| **1 – Very Low** | 1 | 3 | 5 | 7 | 9 |
+
+---
+
+## 4. Risk Calculation Reference
+
+### Likelihood Scale (X-Axis)
+
+| Score | Label | Approx. Probability | Rationale |
+|--:|---|---|---|
+| 1 | Very Unlikely | < 10% | Theoretically possible; very low historical base rate |
+| 3 | Somewhat Unlikely | 10–30% | Plausible but requires significant triggering event |
+| 5 | 50-50 Possibility | ~50% | Roughly equal chance; e.g., cybersecurity breach given known AWS exposure rates |
+| 7 | Somewhat Likely | 60–80% | More likely than not without specific intervention |
+| 9 | Very Likely | ≥ 80% | Near-certain given current conditions; e.g., capital costs, cost-of-inaction |
+
+### Impact Scale (Y-Axis)
+
+| Score | Label | Financial Range | Amazon-Specific Anchor |
+|--:|---|---|---|
+| 1 | Very Low | < $1M | Manageable within operating budget |
+| 2 | Low | $1M–$10M | Minor; contained without executive escalation |
+| 4 | Moderate | $10M–$100M | Noticeable; manageable with coordinated response |
+| 6 | High | $100M–$500M | Significant; CCPA $7,500/violation × 100M+ customers |
+| 8 | Very High | $500M–$5B | Major; $400M–$1.36B annual savings at stake |
+| 9 | Extreme | $5B+ | Existential; EU AI Act 7% of $716.9B FY2025 = ~$50.2B |
+
+### Severity Thresholds & Treatment Protocol
+
+| Severity | Score | Color | Action Protocol |
+|---|---|---|---|
+| VERY HIGH | ≥ 54 | Red | Board-level escalation; immediate treatment plan with named owner and deadline |
+| HIGH | 40–53 | Orange | Executive action; active mitigation; monthly KRI review |
+| MODERATE | 18–39 | Yellow | Monitor; assign owner; quarterly review; escalate if KRI threshold breached |
+| LOW | < 18 | Green | Accept with documented residual risk; annual review |
