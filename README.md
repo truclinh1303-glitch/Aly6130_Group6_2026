@@ -26,9 +26,9 @@ This repository documents a complete ERM analysis of that acquisition, organized
 ├── .gitignore
 │
 ├── Assignment 1                                      # Module 1 — assignment brief
-├── Data Source References                            # Consolidated registry of all external data sources
-├── Group6_benchmark_parameters-1-assignment 4.csv    # Benchmark parameters (root copy)
-├── Group6_indicator-1-assignment 4.csv               # Indicator panel (root copy)
+├── Data Source References                            
+├── Group6_benchmark_parameters-1-assignment 4.csv
+├── Group6_indicator-1-assignment 4.csv              
 │
 ├── Assignment_2/                                     # Module 2 — problem statements + KRIs, risk register
 │   ├── Assignment2_Problem_Statement.md
@@ -50,13 +50,15 @@ This repository documents a complete ERM analysis of that acquisition, organized
 │
 └── Signature Assignment/                            # Final consolidated deliverable
     ├── data/
-    │   ├── benchmark_parameters.csv                  # Officially-sourced benchmark parameters
-    │   └── market_indicator.csv                      # Synthetic indicator panel (3 risks × 4 indicators × 156 weeks)
+    │   ├── Risk_HeatMap_Risk_Register.xlsx           
+    │   ├── benchmark_parameters.csv                 
+    │   └── market_indicator.csv                      
     ├── notebooks/
-    │   └── IW_Quantitative_Risk_Assessmen.ipynb      # Reproducible quant model (I&W, Monte Carlo, ML)
+    │   ├── IW_Quantitative_Risk_Assessmen.ipynb      
+    │   └── Risk_calculator_Notebook.ipynb            
     └── report/
-        ├── Final_Report.docx                         # Signature Assessment — full aggregated report
-        └── Presentation.pptx                         # Final presentation deck
+        ├── Group6_Final_Report 1.pdf                 
+        └── Group6_Presentation.pdf                   
 ```
 
 > **Module → deliverable map**
